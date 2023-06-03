@@ -1,0 +1,110 @@
+.aboutYourCompany {
+	background: white;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #808080;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__input {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		margin-right: 15px;
+		width: 84%;
+	}
+
+	&__button {
+		border: none;
+		background-color: transparent;
+		width: 54px;
+		height: 54px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		padding: 15px 20px;
+		font-size: 20px;
+	}
+
+	&__content {
+		margin-bottom: 20px;
+	}
+
+	&__description {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px 100px 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+
+	&__buttonWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__next {
+		border: none;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 10px 20px;
+		border: 1px solid #1d71b8;
+		border-radius: 8px;
+		background-color: transparent;
+	}
+
+	&__back {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background-color: transparent;
+		border: none;
+		padding: 10px 20px;
+		margin-right: 20px;
+	}
+}

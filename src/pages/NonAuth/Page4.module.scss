@@ -1,0 +1,89 @@
+.page4Box {
+	.page4Box__container {
+		.page4Box__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 10px;
+
+			.businessIcons {
+				width: 40%;
+				height: 90%;
+
+				.page4BoxBigImg img {
+					margin-top: 3.5rem;
+					width: 75%;
+				}
+
+				.icons {
+					display: flex;
+					gap: 3rem;
+					margin-top: 40px;
+
+					img {
+						width: 35px;
+						height: 35px;
+					}
+				}
+			}
+
+			.thousandWorkers {
+				width: 55%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+
+				h2 {
+					font-family: "Montserrat";
+					font-style: italic;
+					font-weight: 700;
+					font-size: 45px;
+					line-height: 61px;
+					color: #323232;
+					margin-left: 3rem;
+					margin-top: 4rem;
+				}
+
+				p {
+					font-family: "Montserrat";
+					font-weight: 400;
+					font-size: 25px;
+					line-height: 33px;
+					letter-spacing: 0.01em;
+					color: #323232;
+					margin-left: 3rem;
+				}
+
+				button {
+					width: 50%;
+					height: 50px;
+					color: white;
+					font-family: "Montserrat";
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 20px;
+					border: none;
+					background-color: #1d71b8;
+					border-radius: 8px;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-height: 824px) {
+	.page4Box {
+		.page4Box__container {
+			.page4Box__inner {
+
+				.icons {
+					display: flex;
+					gap: 3rem;
+					margin-top: 20px !important;
+				}
+			}
+		}
+	}
+}

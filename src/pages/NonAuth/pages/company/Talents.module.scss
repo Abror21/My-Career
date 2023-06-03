@@ -1,0 +1,519 @@
+.jobAdContainer{
+    width: 1140px;
+    margin: 0 auto;
+    top: 160px;
+    z-index: 7;
+    display: grid;
+    grid-template-columns: 750px 360px;
+    justify-content: space-between;
+    padding: 22px 38px;
+    scroll-behavior: smooth;
+}
+
+.circleBg {
+    position: relative;
+
+    img {
+        width: 600px;
+        top: -330px;
+        left: -72px;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.verticalLineBreak {
+    width: 1px;
+    height: 100%;
+    background-color: #E1E1E2;
+}
+
+.horizontalLineBreak {
+    height: 1px;
+    width: 100%;
+    background-color: #E1E1E2;
+}
+
+.verified {
+    display: flex;
+    gap: 4px;
+}
+
+.jobAd{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    .jobTitle {
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 28px;
+            color: #323232;
+        }
+    
+        .editJobAdButton {
+            width: 45px;
+            height: 45px;
+            color: #1D71B8;
+            background-color: #FFF;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 3px 0 rgba($color: #1D71B8, $alpha: 0.5);
+    
+        }
+    
+    }
+
+    .jobDescription {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: justify;
+        letter-spacing: 0.0375em;
+        margin-bottom: 22px;
+    }
+
+    .jobAdPhoto {
+        width: 100%;
+        height: max-content;
+        position: relative;
+        margin-bottom: 22px;
+
+        .photo {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .jobAdProposals {
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 525;
+            font-size: 22px;
+            line-height: 28px;
+            color: #323232;
+            margin-bottom: 23px;
+        }
+    
+        .proposal {
+            width: 100%;
+            border-radius: 9px;
+            box-shadow: 0 2px 6px 0 rgba($color: #000000, $alpha: 0.25);
+            padding: 15px 22px;
+            margin-bottom: 7.5px;
+            box-sizing: border-box;
+            background-color: #FFF;
+    
+            .freelancerKeySkills {
+                display: flex;
+                gap: 7.5px;
+            
+                p {
+                    color: #1D71B8;
+                    font-size: 13.5px;
+                    line-height: 25.5px;
+                    padding: 0 7.5px;
+                    border-radius: 4.5px;
+                    box-shadow: 0 0 3px 0 rgba($color: #1D71B8, $alpha: 0.5);
+                }
+            }
+
+            .proposalRow {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+    
+                p {
+                    align-self: center;
+                    font-size: 12px;
+                    line-height: px;
+                }
+
+
+                .freelancerExperience {
+                    display: flex;
+                    color: #808080;
+                
+                    span {
+                        color: #1D71B8;
+                    }
+                }
+
+                .freelancerLocation {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    color: #808080;
+                }
+                
+            }
+    
+            .proposalLeft {
+                display: flex;
+                font-family: 'Montserrat';
+                gap: 15px;
+                text-align: center;
+
+                .freelancerProfilePhoto {
+                    width: 40px;
+                    height: auto;
+                }
+
+                .freelancerInfo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                
+                    p {
+                        font-size: 13px;
+                        color: #000000;
+                    }
+                }
+
+                .freelancerStats {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    p {
+                        color: #808080;
+                    }
+
+                    .successRate {
+                        width: 100%;
+                        height: 3px;
+                        border-radius: 1.5px;
+                        background-color: #CDCDCD;
+        
+                        .rateBar {
+                            width: 80%;
+                            height: 100%;
+                            background-color: #1D71B8;
+                            border-radius: 1.5px;
+                        }
+                    }
+                }
+    
+    
+                h3 {
+                    font-size: 19px;
+                    line-height: 19px;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    color: #323232;
+                }
+    
+                h4 {
+                    color: #323232;
+                    font-weight: normal;
+                }
+    
+                p {
+                    text-align: center;
+                }
+    
+            }
+    
+            .proposalLetter {
+                display: flex;
+                gap: 7.5px;
+                font-size: 14px;
+                line-height: 16px;
+                padding: 7.5px;
+                border-top: 1px solid #E1E1E2;
+                border-bottom: 1px solid #E1E1E2;
+                margin-top: 15px;
+                margin-bottom: 11px;
+            }
+    
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            .expandedText {
+                display: block;
+            }
+    
+        }
+    }
+
+    .seeMore {
+        margin: 15px auto;
+        color: #1D71B8;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+    }  
+
+}
+
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: #323232;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18.5px;
+        line-height: 22.5px;
+        margin-bottom: 15px;
+    }
+
+    .companyRep{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 22px;
+        font-size: 12px;
+    
+        .repPhoto{
+            position: relative;
+            
+            img {
+                width: 68px;
+                height: auto;
+            }
+
+            .verificationBadge {
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+            }
+        } 
+
+        .repInfo {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #323232;
+            margin-bottom: 4px;
+        }
+    
+        p {
+            color: #808080;
+    
+        }
+        a {
+            color: #1D71B8;
+        }
+    }
+}
+
+.jobAdDetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+
+    h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #808080;
+    }
+}
+
+.addToLikedButton {
+                width: 30px;
+                height: 30px;
+                color: #1D71B8;
+                background-color: #FFF;
+                border-radius: 50%;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 3px 0 rgba($color: #1D71B8, $alpha: 0.5);
+            
+}
+
+.alignItemsCenter {
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search {
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 68px;
+    background-color: white;
+    outline: 1px solid #1D71B8;
+    border-radius: 6px;
+    overflow: hidden;
+
+    input {
+        border: none;
+        background-color: transparent;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    button {
+        background-color: #1D71B8;
+        border: none;
+        border-radius: 6px;
+        color: #FFF;
+    }
+
+}
+
+.menu__links{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+    z-index: 6;
+    cursor: pointer;
+    line-height: 27px;
+
+    .menu__link{
+        cursor: pointer;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1d71b8;
+        display: flex;
+        border-bottom: 3px solid transparent;
+        
+    }
+    .active{
+        cursor: pointer;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1d71b8;
+        display: flex;
+        border-bottom: 3px solid #1d71b8;
+    }
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    gap: 15px;
+    background: linear-gradient(101.5deg, rgba(255, 255, 255, 0.2) 0%, rgba(29, 113, 184, 0.2) 100%), #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    height: max-content;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    button {
+        font-size: 15px;
+        line-height: 33px;
+        padding: 0 15px;
+        background-color: transparent;
+        color: #1D71B8;
+        border: 1px solid #1D71B8;
+        border-radius: 6px;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7.5px;
+        width: 290px;
+
+        h3 {
+            font-weight: normal;
+            font-size: 15px;
+        }
+
+        .inputFields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            justify-content: space-between;
+
+        }
+
+        .inputField {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7.5px;
+            font-size: 14px;
+            color: #323232;
+
+            input, select {
+                width: 100%;
+                font-size: 15px;
+                padding: 11px 10px;
+                background: #FFFFFF;
+                border: 1px solid #CDCDCD;
+                border-radius: 6px;
+                box-sizing: border-box;
+            }
+        }
+
+        .checkbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7.5px;
+            margin-top: 7.5px;
+
+            input {
+                width: 18px;
+                height: 18px;
+                border-color: transparent;
+                border: 1px solid #1D71B8;
+                border-radius: 4.5px;
+            }
+
+            label {
+                font-size: 14px;
+                color: #323232;
+            }
+        }
+    }
+}
+

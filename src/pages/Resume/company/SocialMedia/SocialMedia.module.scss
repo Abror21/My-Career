@@ -1,0 +1,124 @@
+.socialMedia {
+	background: white;
+	width: 750px;
+	padding: 3rem;
+	padding-right: 4.5rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+}
+
+.socialMedia h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 37px;
+	color: #323232;
+}
+
+.socialMedia p {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #808080;
+	margin-top: 1rem;
+}
+
+.socialMedia input {
+	margin: 1.5rem 0;
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	padding: 1rem;
+}
+
+.socialMedia input ::placeholder {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #808080;
+}
+
+.nextButton,
+.backButton {
+	border: none;
+	border-radius: 8px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+	background: #ffffff;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+}
+
+.nextButton {
+	border: 1px solid #1d71b8 !important;
+}
+
+.backButton {
+	margin-left: 32rem;
+}
+
+.socialContainers {
+	width: 105%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	justify-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.socialContainers img {
+	margin-top: 2rem;
+}
+
+.socialCard {
+	text-align: center;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-radius: 7px;
+	padding-bottom: 2rem;
+}
+
+.socialInput {
+	display: grid;
+	grid-template-columns: 16fr 1fr;
+}
+
+.socialInputIn {
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	display: flex;
+	padding: 0.3rem;
+}
+
+.socialInputIn p {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 24px;
+	color: #808080;
+	margin: 0.5rem;
+}
+
+.socialInputIn img {
+	margin: 0.5rem;
+	margin-left: 20rem;
+	height: 1.5rem;
+}
+
+.socialInput button {
+	margin-left: 1rem;
+	margin-right: -2rem;
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	background-color: white;
+}

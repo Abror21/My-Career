@@ -1,0 +1,117 @@
+.yourCompany {
+	background: white;
+	height: 591px;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+
+	&__imageWrapper {
+		margin: 30px 0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__image {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background: #f5f5f7;
+		border: 1px solid #cdcdcd;
+		margin-bottom: 10px;
+		background-image: url("../../../../assets/images/addphoto.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		transition: 0.3s ease;
+	}
+
+	&__image:hover {
+		background: #dfe8f1;
+		background-image: url("../../../../assets/images/addphotohover.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #808080;
+		transition: 0.3s ease;
+	}
+
+	&__text:hover {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-decoration: underline;
+		color: #1d71b8;
+	}
+
+	&__subtitle {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__content {
+		margin-bottom: 20px;
+	}
+
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		width: 94%;
+	}
+
+	&__buttonWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__next {
+		border: none;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 10px 20px;
+		border: 1px solid #1d71b8;
+		border-radius: 8px;
+		background-color: transparent;
+	}
+
+	&__back {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background-color: transparent;
+		border: none;
+		padding: 10px 20px;
+		margin-right: 20px;
+	}
+}

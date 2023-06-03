@@ -1,0 +1,142 @@
+.colasible {
+    position: relative;
+    padding-top: 10px;
+    height: 44px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204, 0.5);
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: 26px;
+        border: 1px solid rgb(249, 231, 231);
+        cursor: pointer;
+        
+        &:hover {
+            background-color: rgb(231, 219, 219);
+            transition: 0.3s;
+        }
+
+        & img {
+            width: 15px;
+            height: 15px;
+        }
+
+    }
+
+    &_info {
+        max-width: 850px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(204, 204, 204, 0.5);
+    }
+
+}
+
+
+.colasible1 {
+    height: 100%;
+    scrollbar-width: none;
+    overflow: auto  ;
+    cursor: pointer;
+
+}
+
+.colasible1  {
+    border-bottom: none ;
+}
+
+.colasible1 img {
+    transition: 0.3s;
+   transform: rotate(180deg);
+}
+
+.colasible1::-webkit-scrollbar {
+  display: none;
+}
+
+@media ( max-width: 1700px ) {
+
+.colasible {
+    position: relative;
+    padding-top: 10px;
+    height: 30px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204, 0.5);
+
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border: 1px solid rgb(249, 231, 231);
+        background-color: #fff;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: rgb(231, 219, 219);
+            transition: 0.3s;
+        }
+
+        & img {
+            width: 15px;
+            height: 15px;
+        }
+
+    }
+
+    &_info {
+        max-width: 700px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(204, 204, 204, 0.5);
+    }
+
+}
+
+
+.colasible1 {
+    height: 100%;
+    scrollbar-width: none;
+    overflow: auto  ;
+    cursor: pointer;
+
+}
+
+.colasible1  {
+    border-bottom: none ;
+}
+
+.colasible1 img {
+    transition: 0.3s;
+   transform: rotate(180deg);
+}
+
+.colasible1::-webkit-scrollbar {
+  display: none;
+}
+
+}

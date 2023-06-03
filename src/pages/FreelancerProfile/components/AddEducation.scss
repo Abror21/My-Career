@@ -1,0 +1,206 @@
+.education {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+	background: white;
+	min-height: 100px;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+    z-index: 12;
+
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 30px;
+	}
+
+	&__inputName {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputSelect {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputStudy {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputLocation {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__wrapper {
+        margin-top: 30px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		gap: 30px;
+	}
+
+    &_buttonAdd {
+        background: #FFFFFF;
+        border: 1px solid #1D71B8;
+        border-radius: 8px;
+    }
+
+	&__wrapperDate {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__label {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__inputDate {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		width: 88%;
+	}
+
+	&__checkbox {
+		display: flex;
+		align-items: center;
+	}
+
+	&__inputCheckbox {
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		border: 1px solid #1d71b8;
+		border-radius: 6px;
+	}
+
+	&__labelCheckbox {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+	}
+
+	&__next {
+		border: 1px solid #1d71b8 !important;
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+        	border: 1px solid #1d71b8 !important;
+	cursor: pointer;
+
+	&:hover {
+		transition: 0.3s;
+		background-color: #1d71b8;
+		color: #ffffff;
+	}
+	}
+
+	&__back {
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-right: 20px;
+
+        	margin-left: 22rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	border: 1px solid #ffffff !important;
+
+	&:hover {
+		transition: 0.3s;
+			border: 1px solid #1d71b8 !important;
+	}
+	}
+
+	&__checkboxWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+
+.education__buttonAdd {
+    padding: 15px;
+    box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #1D71B8;
+        border-radius: 8px;
+        width: 100%;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+/* Blue (main colour) */
+
+color: #1D71B8;
+}

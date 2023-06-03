@@ -1,0 +1,386 @@
+.contract {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    overflow-y: auto;
+
+    &__container {
+        width: 100%;
+        max-width: 1410px;
+        margin: 0 auto;       
+    }
+
+    &__inner {
+        position: relative;
+        background-color: #fff;
+        padding: 0 60px;
+        padding-top: 60px;
+        padding-bottom: 46px;
+    }
+
+    &__clouse_btn {
+        position: absolute;
+        top: 0;
+        right: -84px;
+        padding: 15px;
+        padding-left: 27px;
+        background-color: #fff;
+        border: 0;
+        border-radius: 0px 12px 12px 0px;
+        cursor: pointer;
+    }    
+    
+    &__clouse_btn svg {
+        padding: 12px;
+        transition: all .3s linear;
+        background-color: #FFFFFF; 
+        border: 1px solid #1D71B8;
+        border-radius: 8px;
+    } 
+
+    &__clouse_btn svg:hover {
+        transition: all .3s linear;
+        background-color: #1D71B8;
+    } 
+    
+    &__clouse_btn svg:hover path{
+        fill: #fff;
+        stroke: #fff;
+
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color:#323232;
+    }
+
+    &__root_title {
+        text-align: center;
+    }
+}
+
+.employer,
+.employee {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CDCDCD;
+
+    &__profil {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 20px;
+    }
+
+    &__profil_start {
+        border-right: 1px solid #CDCDCD;
+    }
+
+    &__profil_start{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__img{
+        width: 90px;
+        height: 90px;object-fit: fill;
+    }
+
+    &__company{
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__job{
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #808080;
+    }
+
+    &_name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #323232;
+    }
+
+    &__adress_item {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+        padding-left: 69px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__adress_item::before{
+        position: absolute;
+        top: 4px;
+        left: 30px;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        content: "";
+    }
+
+    &__adress_item:first-child::before{
+        background-image: url("../../assets/images/contract-call.svg");
+    }
+
+    &__adress_item:nth-child(2)::before{
+        background-image: url("../../assets/images/contract-email.svg");
+    }
+
+    &__adress_item:nth-child(3)::before{
+        background-image: url("../../assets/images/contract-location.svg");
+    }
+
+    &__adress_item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__deck {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #000000;
+        border: 1px solid green;
+    }
+
+    &__info_list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info_item:last-child {
+        width: 100%;
+        max-width: 270px;
+    }
+
+    &__info_title {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__info_text {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #323232;
+    }
+}
+
+.employee__name {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.employee__job {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.employee__desc {
+    padding-bottom: 20px;
+}
+
+.about {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CDCDCD;
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__desc {
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+
+    &__info_list {
+        display: grid;
+        grid-template-columns: 64% 36%;
+        row-gap: 20px;
+    }
+
+    &__info_title {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    &__info_text {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #323232;
+    }
+}
+
+.details {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CDCDCD;
+
+    &__form_box {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,615px));
+        row-gap: 20px;
+        column-gap: 60px;
+    }
+
+    &__form_label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__form_input {
+        width: 100%;
+        max-width: 615px;
+        padding: 15px 20px;
+        background: #FFFFFF;
+        border: 1px solid #CDCDCD;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}
+
+.contract__apply {
+    padding-top: 30px;
+}
+
+.contract__apply_desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.apply__btns {
+    display: flex;
+    justify-content: end;
+}
+
+.contract__apply_btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #1D71B8;
+    border-radius: 8px;
+    border: 0;
+}
+
+.danger {
+    font-family: 'Montserrat';
+    padding-top: 5px;
+    color: red;
+    font-weight: 600;
+}
+
+.danger_input {
+    border: 1px solid red;
+}
+
+.succes_input {
+    border: 1px solid green;
+}
+
+.succes {
+    font-family: 'Montserrat';
+    padding-top: 5px;
+    color: green;
+    font-weight: 600;
+}
+
+.requisites {
+    padding-top: 30px;
+
+    &__title {
+        padding-bottom: 20px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 64% 36%;
+    }
+
+    &__details:first-child {
+        max-width: 645px;
+        border-right: 1px solid #CDCDCD;
+    }
+
+    &__item + &__item {
+        margin-top: 20px;
+    }
+
+    &__item_strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #323232;
+    }
+
+    
+    &__item_span {
+        display: block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #323232;
+    }
+}
+@media (max-width:1560px){
+    .contract__clouse_btn {
+        right: 0;
+    }
+}

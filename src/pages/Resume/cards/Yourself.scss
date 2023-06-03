@@ -1,0 +1,271 @@
+.yourselfCard {
+	&_label {
+		display: inline-block;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		padding-bottom: 8px  !important; 
+	}
+
+	&_title {
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 30px;
+	}
+
+	&_textarea {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 15px 20px;
+		border: 1px solid #CDCDCD;
+		border-radius: 8px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		resize: none;
+		height: 90px;
+	}
+
+	&_btn {
+		margin-top: 30px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		justify-content: flex-end;
+	}
+
+	&_form {
+
+
+		&_wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 10px;
+			margin-bottom: 20px;
+
+
+			&_bottom {
+				display: flex;
+				flex-direction: column;
+
+				input {
+					padding: 15px 20px;
+					font-family: 'Montserrat';
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 24px;
+					color: #808080;
+					background: #FFFFFF;
+					border: 1px solid #CDCDCD;
+					border-radius: 8px;
+					width: 100%;
+					box-sizing: border-box;
+				}
+			} 
+		}
+	}
+
+	
+}
+.mySelect__control, .css-13cymwt-control {
+	width: 320px !important;
+	padding: 10px 20px;
+	border-radius: 6px !important;
+	color: #808080 !important;
+}
+
+.mySelectLang__value-container {
+	height: auto !important;
+}
+
+
+.nextButton {
+	border-radius: 8px !important;
+	padding: 10px 20px !important;
+	border: 1px solid #1d71b8 !important;
+	cursor: pointer;
+	background-color: #fff;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+	&:hover {
+		transition: 0.3s;
+		color: white;
+		background-color: #1d71b8;
+	}
+}
+
+.backButton {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+	border-radius: 8px !important;
+	padding: 10px 20px !important;
+	border: 1px solid white !important;
+	// margin-left: 32.123rem;
+	background-color: #fff;
+	cursor: pointer;
+
+	&:hover {
+	transition: 0.3s;
+	border: 1px solid #1d71b8 !important;
+	}
+}
+
+.yourself_select {
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+
+.yourselfCard {
+	.mantine-MultiSelect-input   {
+		box-sizing: border-box;
+		padding: 10px 15px !important;
+		border-radius: 6px !important;
+	}
+
+	.mantine-MultiSelect-input input::placeholder  {
+		color: #808080 !important;
+	};
+
+	.mantine-MultiSelect-searchInput {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #FFFFFF;
+	}
+	
+	
+	
+	.mantine-MultiSelect-defaultValue , .mantine-MultiSelect-value , .mantine-fqghar {
+		
+		padding: 6px 10px !important;
+		color: white !important;
+		background-color: #1D71B8 !important;
+	}
+	
+	
+	.mantine-rsiguj, .mantine-MultiSelect-defaultValueLabel  {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFFFFF;
+	}
+
+	.mantine-UnstyledButton-root, .mantine-ActionIcon-root , .mantine-MultiSelect-defaultValueRemove , .mantine-zo2naa {
+		& svg path{
+			fill: white;
+		}
+	}
+
+}
+
+.css-t3ipsp-control {
+	padding: 5px 15px !important;
+}
+
+
+@media only screen and(max-width:1400px){ 
+	.yourselfCard {
+		&_label {
+			font-size: 16px;
+			padding-bottom: 4px  !important; 
+		}
+	
+		&_title {
+			font-size: 24px;
+			margin-bottom: 8px;
+		}
+	
+		&_textarea {
+			padding: 10px 20px;
+			font-size: 17px;
+			resize: none;
+			max-height: 90px;
+		}
+
+		&_form {
+
+
+			&_wrapper {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 10px;
+				margin-bottom: 20px;
+	
+	
+				&_bottom {
+					display: flex;
+					flex-direction: column;
+	
+				input {
+					padding: 10px 20px;
+					font-family: 'Montserrat';
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 24px;
+					color: #808080;
+					background: #FFFFFF;
+					border: 1px solid #CDCDCD;
+					border-radius: 6px;
+					width: 100%;
+					box-sizing: border-box;
+				}
+				} 
+			}
+		}
+
+		.mantine-MultiSelect-searchInput {
+			font-size: 17px;
+			line-height: 20px;
+		}
+	
+		&_btn {
+			margin-top: 15px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			justify-content: flex-end;
+			font-size: 17px;
+		}	
+
+			
+		.mantine-MultiSelect-input   {
+			box-sizing: border-box;
+			padding: 8px 15px !important;
+			font-size: 17px;
+		}
+
+	
+	}
+
+	.mySelect__control, .css-13cymwt-control {
+		display: block;
+		width: 100% !important;
+		padding: 5px 15px !important;
+	}
+}

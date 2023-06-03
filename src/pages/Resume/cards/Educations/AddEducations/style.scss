@@ -1,0 +1,299 @@
+.addEducations {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	backdrop-filter: blur(15px);
+	background-color: rgba(0, 0, 0, 0.3);
+
+	&__inner {
+		position: relative;
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+		padding: 40px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		transition: all .6s linear;
+		background: white;
+		overflow: hidden;
+	}
+
+	&__modal_clouce {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		display: inline-block;
+		padding: 12px 10px 8px 10px;
+		background-color: #fff;
+		border: 1px solid #cccccc;
+		border-radius: 8px;
+		transition: all .3s linear;
+		cursor: pointer;
+	}
+
+	&__modal_clouce:hover {
+		border: 1px solid #1d71b8;
+		transition: all .3s linear;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 30px;
+	}
+
+	&__inputName {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputSelect {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputStudy {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__inputLocation {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		gap: 30px;
+	}
+
+	&__wrapperDate {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__label {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__inputDate::placeholder {
+		color: #808080;
+	}
+
+	&__inputDate {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		padding: 15px 20px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		width: 88%;
+	}
+
+	&__checkbox {
+		display: flex;
+		align-items: center;
+	}
+
+	&__inputCheckbox {
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		border: 1px solid #1d71b8;
+		border-radius: 6px;
+	}
+
+	&__labelCheckbox {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+	}
+
+	&__next {
+		border: 1px solid #1d71b8 !important;
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		transition: all .3s linear;
+		cursor: pointer;
+	}
+
+	&__next:hover,
+	&__back:hover {
+		color: #fff;
+		background: #1d71b8;
+		transition: all .3s linear;
+	}
+
+	&__back {
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-right: 20px;
+		transition: all .3s linear;
+		cursor: pointer;
+		border: 1px solid white;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid #1d71b8;
+			transition: 0.3s;
+		}
+	}
+
+	&__checkboxWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and(max-width:1550px){
+	.addEducations {
+		&__inner {
+			padding: 20px;
+		}
+
+		&__title {
+			font-size: 17px;
+			line-height: 24px;
+			margin-bottom: 15px;
+		}
+
+		&__inputName {
+			display: inline-block;
+			font-size: 17px;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&__inputSelect,
+		&__inputStudy,
+		&__inputLocation {
+			font-size: 17px;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&__wrapper {
+			margin-bottom: 10px;
+		}
+
+		&__label {
+			font-size: 17px;
+		}
+
+		&__inputDate {
+			display: inline-block;
+			font-size: 17px;
+			line-height: 24px;
+			padding: 10px 20px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&__inputCheckbox {
+			margin-right: 10px;
+			width: 18px;
+			height: 18px;
+		}
+
+		&__labelCheckbox {
+			font-size: 17px;
+		}
+
+		&__next {
+			font-size: 17px;
+			padding: 8px 16px;
+		}
+
+		&__back {
+			font-size: 17px;
+			padding: 8px 16px;
+			margin-right: 10px;
+		}
+
+		&__checkboxWrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.experience__box__hovering path {
+	stroke: #1D71B8;
+	transition: 0.3s;
+}
+
+.experience__box__hoveringT path {
+	stroke: #FF0000;
+	transition: 0.3s;
+}

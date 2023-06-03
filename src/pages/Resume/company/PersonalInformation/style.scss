@@ -1,0 +1,83 @@
+.companyInformation {
+	background: white;
+	height: 453px;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #808080;
+		margin-bottom: 20px;
+		letter-spacing: 1px;
+	}
+
+	&__form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	&__input {
+		width: 90%;
+		padding: 1rem;
+		border-radius: 5px;
+		border: 1px solid #cdcdcd;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+	}
+
+	&__subtitle {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 10px;
+	}
+
+	&__form {
+		margin-bottom: 30px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__content {
+		margin-bottom: 20px;
+	}
+
+	&__next {
+		border: none;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background-color: transparent;
+		border: 1px solid #1d71b8;
+		border-radius: 8px;
+		padding: 10px 20px;
+	}
+}

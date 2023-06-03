@@ -1,0 +1,251 @@
+.dropbtn {
+  position: relative;
+  background: #F5F5F7;
+  border-radius: 5px 5px 0px 0px;
+
+  padding: 4px 20px;
+  border: none;
+  min-width: 210px;
+  box-shadow: 0px 0px 5px #1D71B8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_arrow_img {
+  position: absolute;
+  right: 14px;
+  top: 18px;
+}
+
+.dropdown_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  color: #323232;
+  overflow: hidden;
+  max-width: 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 210px;
+  background: #F5F5F7;
+  box-shadow: 0px 0px 5px #1D71B8;
+  z-index: 10000000;
+  border-top: 1px solid #1D71B8;
+  border-radius: 0px 0px px 8px;
+
+  button {
+    width: 100%;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    text-align: left;
+    font-family: 'Montserrat';
+    transition: all 0.3s linear;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 5px #1D71B8;
+    transition: all 0.3s linear;
+  }
+}
+
+.dropdown-content a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+}
+
+.dropdown-content a:hover {
+    box-shadow: 0px 0px 5px #1D71B8;
+    transition: all 0.3s linear;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 2s;
+}
+
+.dropdown:hover .header_arrow_img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+@media (max-width: 1700px) {
+.dropbtn {
+  background: #F5F5F7;
+  border-radius: 5px 5px 0px 0px;
+
+  padding: 3px 18px;
+  border: none;
+  min-width: 200px;
+  box-shadow: 0px 0px 5px #1D71B8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+  overflow: hidden;
+  max-width: 90px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background: #F5F5F7;
+  box-shadow: 0px 0px 5px #1D71B8;
+  z-index: 1;
+  border-top: 1px solid #1D71B8;
+  border-radius: 0px 0px px 8px;
+}
+
+.dropdown-content a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+    display: block;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+
+.dropdown-content a:hover {
+    box-shadow: 0px 0px 5px #1D71B8;
+    transition: 0.3s;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 2s;
+}
+
+.dropdown:hover .header_arrow_img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+}
+
+@media (max-width: 1440px) {
+
+
+  .dropbtn {
+  background: #F5F5F7;
+  border-radius: 5px 5px 0px 0px;
+
+  padding: 2.5px 17px;
+  border: none;
+  min-width: 170px;
+  box-shadow: 0px 0px 5px #1D71B8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown_title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: #323232;
+  overflow: hidden;
+  max-width: 85px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 187px;
+  background: #F5F5F7;
+  box-shadow: 0px 0px 5px #1D71B8;
+  z-index: 1;
+  border-top: 1px solid #1D71B8;
+  border-radius: 0px 0px px 8px;
+}
+
+.dropdown-content a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323232;
+    display: block;
+    text-decoration: none;
+    padding: 7px 20px;
+}
+
+.dropdown-content a:hover {
+    box-shadow: 0px 0px 5px #1D71B8;
+    transition: 0.3s;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 2s;
+}
+
+.dropdown:hover .header_arrow_img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+}

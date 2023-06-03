@@ -1,0 +1,15 @@
+.freelancermodal_video_img {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(205, 205, 205, 0.5);
+}
+
+
+@media ( max-width: 1700px ){
+.freelancermodal_video_img {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(205, 205, 205, 0.5);
+    width: 770px;
+}    
+}

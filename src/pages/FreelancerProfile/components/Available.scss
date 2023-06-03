@@ -1,0 +1,128 @@
+.freelanceravailable {
+    position: absolute;
+    z-index: 2;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    top: 50px;
+    right: 550px;
+    width: 750px;
+
+    &_title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #323232;
+    }
+
+    &_info {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #808080;
+
+    }
+
+    &_text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #323232;
+
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        gap: 10px;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & input {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+
+            &_title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #323232;               
+            }
+        }
+    }
+
+    &_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        &_btn {
+            padding: 10px 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+            color: #323232;
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 8px;
+
+            &:hover {
+            border: 1px solid #1D71B8;
+            cursor: pointer;
+            transition: 0.3s;
+
+            }
+        }
+
+         &_btn1 {
+            padding: 10px 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+            color: #323232;
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            border: 1px solid #1D71B8;
+
+            &:hover {
+            cursor: pointer;
+            background-color: #1D71B8;
+            transition: 0.3s; 
+            color: white;
+         }
+
+    
+
+
+
+
+    
+    }
+}
+}

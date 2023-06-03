@@ -1,0 +1,126 @@
+
+.languageCard {
+	position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+// text-align: center;
+	background: white;
+	width: 750px;
+	padding: 3rem;
+	// padding-right: 4.5rem;
+	z-index: 12;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+}
+
+.languageCard p {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #808080;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.nextButton,
+.backButton {
+	border: none;
+	border-radius: 8px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+	background: #ffffff;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+}
+
+.nextButton {
+	border: 1px solid #1d71b8 !important;
+	cursor: pointer;
+
+	&:hover {
+		transition: 0.3s;
+		background-color: #1d71b8;
+		color: #ffffff;
+	}
+}
+
+.backButton {
+	margin-left: 22rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	border: 1px solid #ffffff !important;
+
+	&:hover {
+		transition: 0.3s;
+			border: 1px solid #1d71b8 !important;
+	}
+}
+
+.addLanguage {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 5px;
+	border: 1px solid #1d71b8;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	background-color: white;
+	color: #1d71b8;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #1d71b8;
+}
+
+.languageForm select {
+	margin-top: 1rem;
+	width: 100%;
+	border: 1px solid #cdcdcd;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+	padding: 1rem;
+}
+
+.select {
+	display: flex;
+	width: 750px;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cancelLang {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	padding: 10px;
+	cursor: pointer;
+	border: 1px solid #cdcdcd;
+	
+}
+
+
+.pokam {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+
+.languageSelect {
+	width: 100%;
+}

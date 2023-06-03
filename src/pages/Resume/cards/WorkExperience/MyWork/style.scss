@@ -1,0 +1,272 @@
+*{
+	outline: none;
+}
+
+.mywork {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	backdrop-filter: blur(15px);
+	background-color: rgba(0, 0, 0, 0.3);
+
+	&__inner {
+		position: relative;
+		background: white;
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+		padding: 40px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		border-radius: 10px;
+		box-sizing: border-box;
+		transition: all .6s linear;
+		overflow: hidden;
+	}
+
+	&__modal_clouce {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		display: inline-block;
+		padding: 12px 10px 8px 10px;
+		background-color: #fff;
+		border: 1px solid #cccccc;
+		border-radius: 8px;
+		transition: all .3s linear;
+		cursor: pointer;
+	}
+
+	&__modal_clouce:hover {
+		border: 1px solid #1d71b8;
+		transition: all .3s linear;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 30px;
+	}
+
+	&__input {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 94%;
+		margin-bottom: 20px;
+	}
+
+	&__checkbox {
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__inputCheckbox {
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		border: 1px solid #1d71b8;
+		border-radius: 6px;
+	}
+
+	&__labelCheckbox {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		gap: 30px;
+	}
+
+	&__wrapperDate {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__label {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__inputDate {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		width: 88%;
+	}
+
+	&__descriptionWrapper {
+		margin-bottom: 30px;
+	}
+
+	&__description {
+		display: inline-block;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 100%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+		box-sizing: border-box;
+		resize: none;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__next {
+		border: 1px solid #1d71b8 !important;
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		transition: all .3s linear;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #1d71b8;
+			color: white;
+			transition: 0.3s;
+		}
+	}
+
+	&__back {
+		border: none;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-right: 20px;
+		cursor: pointer;
+		transition: all .3s linear;
+	}
+
+	&__next:hover,
+	&__back:hover {
+		color: #fff;
+		background: #1d71b8;
+		transition: all .3s linear;
+	}
+}
+
+@media only screen and(max-width:1550px){
+	.mywork {
+
+		&__inner {
+			padding: 20px;
+		}
+
+		&__text {
+			font-size: 25px;
+			line-height: 25px;
+			margin-bottom: 15px;
+		}
+
+		&__input {
+			display: inline-block;
+			font-size: 17px;
+			line-height: 24px;
+			padding: 10px 20px;
+			width: 100%;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+
+		&__checkbox {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+		}
+
+		&__inputCheckbox {
+			margin-right: 10px;
+			width: 18px;
+			height: 18px;
+		}
+
+		&__labelCheckbox {
+			font-size: 17px;
+		}
+
+		&__wrapper {
+			margin-bottom: 20px;
+			gap: 30px;
+		}
+
+		&__label {
+			font-size: 17px;
+		}
+
+		&__inputDate {
+			display: inline-block;
+			font-size: 17px;
+			padding: 10px 20px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&__descriptionWrapper {
+			margin-bottom: 10px;
+		}
+
+		&__description {
+			display: inline-block;
+			min-height: 50px;
+			font-size: 17px;
+			padding: 10px 20px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		&__next {
+			font-size: 17px;
+			padding: 8px 16px;
+		}
+
+		&__back {
+			font-size: 17px;
+			padding: 8px 16px;
+		}
+	}
+}

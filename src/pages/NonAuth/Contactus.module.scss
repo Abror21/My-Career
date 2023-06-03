@@ -1,0 +1,195 @@
+.contact {
+	z-index: 10;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 60px;
+	}
+
+	.mainContacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: 33px;
+		width: 100%;
+		max-width: 560px;
+
+		.telegramContact,
+		.whatsappContact {
+			width: 100%;
+			padding: 31.5px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			background-color: #ffffff;
+			box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+
+			&__title {
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 37px;
+				color: #323232;
+			}
+
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.08);
+				transition: 0.3s;
+			}
+		}
+	}
+
+	.contactUs {
+		width: 100%;
+		max-width: 690px;
+		padding: 50px;
+		background-color: #ffffff;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+		border-radius: 12px;
+
+		&__title {
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 37px;
+			color: #323232;
+		}
+
+		&__desc {
+			margin-bottom: 30px;
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 21px;
+			color: #808080;
+		}
+
+		input,
+		textarea {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 15px 20px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			color: #808080;
+			background: #ffffff;
+			border: 1px solid #cdcdcd;
+			border-radius: 8px;
+		}
+
+		.textMessage {
+			min-height: 126px;
+			margin-bottom: 30px;
+		}
+
+		button {
+			display: block;
+			padding: 10px 20px;
+			margin: 0 11px 0 auto;
+			border: 1px solid #1d71b8;
+			background: #ffffff;
+			box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			font-size: 20px;
+			line-height: 24px;
+			color: #323232;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s linear;
+		}
+
+		& button:hover {
+			background-color: #1d71b8;
+			color: #fff;
+		}
+	}
+}
+
+@media only screen and (max-width: 1750px) {
+	.contact {
+		padding: 25px 0;
+
+		.mainContacts {
+
+			.telegramContact,
+			.whatsappContact {
+				width: 100%;
+				padding: 25px 0;
+
+				&__title {
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 19px;
+					color: #323232;
+				}
+			}
+		}
+
+		.contactUs {
+			padding: 25px;
+
+			&__title {
+				margin-bottom: 5px;
+			}
+
+			&__desc {
+				margin-bottom: 15px;
+				font-size: 17px;
+			}
+
+			input,
+			textarea {
+				margin-bottom: 15px;
+				padding: 10px 15px;
+				font-size: 17px;
+			}
+
+			.textMessage {
+				padding-top: 10px;
+				min-height: 60px;
+				margin-bottom: 20px;
+			}
+
+			button {
+				font-size: 17px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.contact {
+		.mainContacts {
+
+			.telegramContact,
+			.whatsappContact {
+				padding: 20px 0;
+			}
+		}
+
+		.contactUs {
+			&__title {
+				font-size: 24px;
+			}
+
+			&__desc {
+				font-size: 14px;
+			}
+
+			input,
+			textarea {
+				font-size: 14px;
+			}
+
+			button {
+				padding: 5px 15px;
+				font-size: 14px;
+			}
+		}
+	}
+}

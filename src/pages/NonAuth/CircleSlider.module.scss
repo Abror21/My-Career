@@ -1,0 +1,52 @@
+.circles {
+	width: 100%;
+	height: 100%;
+
+	.circles__container {
+		width: 100%;
+		height: 100%;
+		max-width: 1450px;
+
+		.circleSlider {
+			position: absolute;
+			right: 3%;
+			top: 45%;
+			z-index: 101;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.circleSliderHide {
+			display: none;
+		}
+
+		.circleSlider img {
+			height: 20px;
+			width: 5px;
+		}
+
+		.dot {
+			background-color: #FFFFFF;
+			border-radius: 50%;
+			height: 20px;
+			width: 20px;
+			border: 4px solid #1d71b8;
+			margin-top: -4px;
+			transition: 0.6s all;
+			cursor: pointer;
+		}
+
+		.dotactive {
+			background-color: #FFFFFF;
+			border-radius: 50%;
+			height: 34px;
+			width: 34px;
+			border: 6px solid #1D71B8;
+			margin-top: -8px;
+			margin-bottom: -4px;
+			cursor: pointer;
+		}
+	}
+}

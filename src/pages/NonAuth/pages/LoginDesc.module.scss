@@ -1,0 +1,221 @@
+.loginDesc {
+	width: 100%;
+	max-width: 420px;
+	height: 90%;
+	padding: 40px 30px;
+	background: #ffffff;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+
+	.loginDescContent {
+		width: 100%;
+		height: 100%;
+
+		.loginTitleSubtitle {
+			width: 100%;
+			height: 100px;
+			display: grid;
+
+			.login {
+				font-family: "Montserrat", sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 37px;
+				color: #323232;
+			}
+
+			.subtitle {
+				font-family: "Montserrat", sans-serif;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #808080;
+			}
+
+			.signupLink {
+				font-family: "Montserrat", sans-serif;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+				color: #1d71b8;
+			}
+		}
+
+		.formSubmit {
+			margin-top: 30px;
+			width: 100%;
+			grid-template-columns: 1fr;
+
+			input {
+				font-size: 16px;
+				padding-left: 1rem;
+			}
+
+			.formSubmitName {
+				margin-bottom: 15px;
+				width: 100%;
+				height: 50px;
+				font-size: 16px;
+				background: #fff;
+				border: 1px solid #cdcdcd;
+				border-radius: 8px;
+			}
+
+			.formSubmitPassword {
+				width: 100%;
+				height: 50px;
+				font-size: 16px;
+				background: #fff;
+				border: 1px solid #cdcdcd;
+				border-radius: 8px;
+			}
+
+			.continue {
+				padding: 20px 0;
+				display: flex;
+				border-bottom: 1px solid #cdcdcd;
+				width: 100%;
+				justify-content: flex-end;
+
+				button {
+					border-radius: 8px;
+					padding: 10px 20px;
+					color: #FFFFFF;
+					background-color: #1d71b8;
+					display: flex;
+					align-items: center;
+					font-family: "Montserrat", sans-serif;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 24px;
+					border: none;
+					cursor: pointer;
+					text-align: center;
+				}
+			}
+		}
+
+		.bySocialApp {
+			padding: 0;
+			width: 100%;
+			height: 100px;
+			margin-top: 64px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.socialAppTitle {
+				font-family: "Montserrat", sans-serif;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 22px;
+				color: #808080;
+				text-align: center;
+			}
+
+			.socialLinks {
+				width: auto;
+				margin-top: 20px;
+				cursor: pointer;
+				display: flex;
+				gap: 30px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1756px) {
+	.loginDesc {
+		padding: 20px 30px;
+
+		.loginDescContent {
+			.formSubmit {
+				margin-top: 10px !important;
+
+				.formSubmitName {
+					margin-bottom: 10px;
+				}
+			}
+
+			.bySocialApp {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1456px) {
+	.loginDesc {
+		padding: 20px 20px;
+
+		.loginDescContent {
+			.loginTitleSubtitle {
+				display: flex;
+				flex-direction: column;
+
+				.login {
+					font-size: 26px;
+					line-height: 30px;
+				}
+
+				.subtitle {
+					margin-top: 10px;
+					font-size: 16px;
+					line-height: 18px;
+				}
+
+				.signupLink {
+					font-size: 16px;
+					line-height: 18px;
+				}
+			}
+
+			.formSubmit {
+				margin: 0 !important;
+
+				input {
+					padding-left: 1rem;
+				}
+
+				.formSubmitName {
+					margin-bottom: 10px;
+					height: 40px;
+					font-size: 14px;
+				}
+
+				.formSubmitPassword {
+					height: 40px;
+					font-size: 14px;
+				}
+
+				.continue {
+					padding: 10px 0;
+
+					button {
+						padding: 5px 10px;
+						font-size: 16px;
+					}
+				}
+			}
+
+			.bySocialApp {
+				margin-top: 34px;
+
+				.socialAppTitle {
+					font-size: 14px;
+				}
+
+				.socialLinks {
+					margin-top: 10px;
+					gap: 25px;
+
+					&>a>img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,503 @@
+.talantsDesc {
+	width: 100%;
+	min-width: 750px;
+
+	.namePro>h3 {
+		font-weight: 600;
+		font-size: 23px;
+		line-height: 28px;
+		color: #323232;
+	}
+
+	.talantsCard {
+		.talantsSearch {
+			.talantsSearchForm {
+				max-width: 100%;
+				border-radius: 12px;
+				min-height: 54px;
+				font-size: 18px;
+				display: flex;
+				position: relative;
+
+				input {
+					background: transparent;
+					border: 1px solid #1d71b8;
+					border-radius: 8px;
+					padding-left: 18px;
+					width: 100%;
+				}
+
+				button {
+					position: absolute;
+					right: 0;
+					border: none;
+					background-color: #1d71b8;
+					border-radius: 8px;
+					width: 90px;
+					display: inline-block;
+					min-height: 54px;
+				}
+			}
+		}
+
+		.talantsDescCard {
+			padding: 0 3px;
+			margin-top: 20px;
+			height: 522px;
+			overflow-y: scroll;
+			overflow-x: auto;
+			display: grid;
+			gap: 10px;
+			border-radius: 12px;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		.talantsDescItem {
+			width: 100%;
+			height: auto;
+			background: #ffffff;
+			box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+			border-radius: 12px;
+			padding: 10px 20px 20px 20px;
+
+			.talantsLine {
+				min-height: 54px;
+				opacity: 0.5;
+				border-left: 1px solid #cdcdcd;
+			}
+
+			.talantsDescItemHeader {
+				width: 100%;
+				height: 94px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				p {
+					font-family: "Montserrat", sans-serif;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 12px;
+					line-height: 20px;
+					text-align: center;
+					color: #323232;
+				}
+
+				span {
+					font-family: "Montserrat", sans-serif;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 20px;
+					text-align: center;
+					color: #808080;
+				}
+
+				.imgName {
+					position: relative;
+					display: flex;
+					gap: 15px;
+
+					&>img {
+						width: 54px;
+						height: 54px;
+						object-fit: cover;
+					}
+
+					.namePro {
+						font-size: 23px;
+						margin-left: 0.5rem;
+					}
+				}
+
+				.liked {
+					cursor: pointer;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background: #fff;
+					box-shadow: 0px 0px 10px rgba(29, 113, 184, 0.5);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					align-self: flex-start;
+					justify-self: flex-end;
+
+					.bsheart {
+						margin: 4px 0 0 2px;
+						cursor: pointer;
+						width: 20px;
+						height: 18px;
+						font-weight: 600;
+						color: #1d71b8;
+						stroke: solid;
+					}
+
+					.bsheartfill {
+						cursor: pointer;
+						width: 20px;
+						height: 18px;
+						font-weight: 600;
+						color: #1d71b8;
+						// margin-top: 0.2rem;
+						// margin-left: 0.3rem;
+						stroke: solid;
+					}
+				}
+
+				.jobSuccess {
+					&>p {
+						font-size: 20px;
+						line-height: 24px;
+					}
+
+					&>span {
+						font-size: 16px;
+						line-height: 20px;
+						display: inline-block;
+						margin-top: 4px;
+					}
+
+					.blueLine {
+						margin-top: 3px;
+						margin-bottom: 4px;
+						position: relative;
+
+						.blueLine1 {
+							position: absolute;
+							top: -1px;
+							width: 100%;
+							height: 3px;
+							background: #cdcdcd;
+							border-radius: 5px;
+						}
+
+						.blueLine2 {
+							position: absolute;
+							top: -1px;
+							z-index: 3;
+							width: 80%;
+							height: 3px;
+							background: #1d71b8;
+							border-radius: 5px;
+						}
+					}
+				}
+
+				.hourRate {
+					&>p {
+						font-size: 23px;
+						line-height: 28px;
+					}
+
+					&>span {
+						font-size: 16px;
+						line-height: 20px;
+						display: inline-block;
+						margin-top: 6px;
+					}
+				}
+
+				.completedJobs {
+
+					&>p {
+						font-size: 23px;
+						line-height: 28px;
+					}
+
+					&>span {
+						font-size: 16px;
+						line-height: 20px;
+						display: inline-block;
+						margin-top: 6px;
+					}
+				}
+			}
+
+			.blockLine {
+				width: 100%;
+				margin: 5px 0px 0px 10px;
+				opacity: 0.5;
+				border-bottom: 2px solid #cdcdcd;
+				margin: auto;
+			}
+
+			/*---------------Description----------*/
+			.description {
+				position: relative;
+				width: 100%;
+				min-height: 44px;
+				display: flex;
+				gap: 10px;
+				z-index: 10;
+				margin: 10px;
+				cursor: pointer;
+
+				.descContent {
+					height: 44px;
+					overflow: hidden;
+					font-size: 18px;
+					line-height: 22px;
+					max-width: 800px;
+					font-weight: 400;
+					padding-right: 30px;
+					scroll-behavior: auto;
+				}
+
+				.faChevronDown {
+					position: absolute;
+					top: 50%;
+					right: 20px;
+					transform: translateY(-50%);
+					width: 11px;
+					height: 20px;
+					cursor: pointer;
+				}
+			}
+
+			.skills {
+				height: 34px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 20px;
+
+				p {
+					margin-left: 5px;
+					display: flex;
+					gap: 10px;
+					padding: 0;
+
+					span {
+						cursor: pointer;
+						padding: 6px 10px;
+						background: #fff;
+						box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+						border-radius: 6px;
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 22px;
+						color: #1d71b8;
+					}
+				}
+
+				.selectLevel {
+					&>label {
+						font-size: 18px;
+						line-height: 22px;
+						color: #808080;
+					}
+
+					select {
+						border: none;
+						outline: none;
+						padding: 0px 5px 0px 0px;
+						margin-right: 10px;
+						font-family: "Motserrat", sans-serif;
+						font-size: 18px;
+						line-height: 22px;
+						font-weight: 600;
+						line-height: 24px;
+					}
+				}
+			}
+
+			.expLocation {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 20px;
+				margin-left: 5px;
+
+				.exp {
+					display: flex;
+					align-items: center;
+					font-family: "Montserrat", sans-serif;
+					font-weight: 400;
+					font-size: 16px;
+					color: #808080;
+					line-height: 20px;
+
+					span {
+						font-family: "Montserrat", sans-serif;
+						font-weight: 400;
+						font-size: 16px;
+						color: #1d71b8;
+						line-height: 20px;
+					}
+				}
+
+				.location {
+					display: flex;
+					align-items: center;
+					margin-right: 10px;
+					font-size: 16px;
+					gap: 0.5rem;
+					justify-content: flex-end;
+					line-height: 20px;
+					color: #808080;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1356px) {
+	.talantsDesc {
+		min-width: 700px;
+
+		.talantsCard {
+			.talantsSearch {
+				.talantsSearchForm {
+					min-height: 40px;
+
+					button {
+						min-height: 40px;
+						width: 70px;
+
+						img {
+							width: 20px;
+							height: 20px;
+						}
+					}
+				}
+			}
+
+			.talantsDescCard {
+				margin-top: 12px;
+				height: 368px !important;
+			}
+
+
+			.talantsDescItem {
+				padding: 5px 10px 10px 10px;
+
+				.talantsLine {
+					min-height: 42px;
+				}
+
+				.talantsDescItemHeader {
+					height: 54px;
+
+					.jobSuccess>p,
+					.hourRate>p,
+					.completedJobs>p,
+					.namePro>h3 {
+						font-size: 18px;
+						line-height: 20px;
+					}
+
+					.namePro {
+						display: flex;
+						flex-direction: column;
+					}
+
+					span,
+					.jobSuccess>span,
+					.hourRate>span,
+					.completedJobs>span {
+						margin-top: 4px;
+						font-size: 14px;
+						line-height: 10px;
+					}
+
+					.imgName>img {
+						width: 44px;
+						height: 44px;
+					}
+
+					.liked {
+						width: 30px;
+						height: 30px;
+						margin-top: 6px;
+
+						.bsheart {
+							margin-left: 0;
+						}
+					}
+				}
+
+				.description {
+					min-height: 34px;
+					margin: 5px;
+
+					.descContent {
+						height: auto;
+						font-size: 12px;
+						line-height: 18px;
+					}
+				}
+
+				.skills {
+					margin-top: 15px;
+					height: 28px;
+
+					p {
+						span {
+							padding: 6px 10px;
+							background: #fff;
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 18px;
+						}
+					}
+
+					.selectLevel {
+						&>label {
+							font-size: 14px;
+							line-height: 18px;
+						}
+
+						select {
+							font-size: 14px;
+						}
+					}
+				}
+
+				.expLocation {
+					margin-top: 15px;
+
+					.exp {
+						font-size: 12px;
+
+						span {
+							font-size: 12px;
+						}
+					}
+
+					.location {
+						font-size: 12px;
+
+						&>img {
+							width: 12px;
+							height: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1756px) {
+	.talantsDesc {
+		.talantsCard {
+			.talantsDescCard {
+				height: 454px !important;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1456px) {
+	.talantsDesc {
+		.talantsCard {
+			.talantsDescCard {
+				height: 368px !important;
+			}
+		}
+	}
+}

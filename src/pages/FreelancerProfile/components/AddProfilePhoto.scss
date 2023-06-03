@@ -1,0 +1,448 @@
+.photoCard_freelancer {
+	position: absolute;
+    z-index: 2;
+	background: white;
+	top: -25px;
+    right: 600px;
+	height: 514px;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+
+.countryCard {
+	background: white;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+}
+
+.imageUp {
+	margin: auto;
+	width: 5rem;
+	height: 5rem;
+	background-position: center;
+	background-color: #f5f5f7;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	border: 1px solid #cdcdcd;
+	padding: 1rem 1.2rem 1rem 1rem;
+}
+
+.imageUpload:hover .title {
+	color: #1d71b8;
+    cursor: pointer;
+}
+
+.imageUpload:hover .imageUp {
+	cursor: pointer;
+	background-color: #dfe8f1;
+}
+
+& h3 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #808080;
+	margin-top: 1rem;
+}
+
+.inputBox {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.inputBox input {
+	width: 80%;
+	padding: 1rem;
+	border-radius: 5px;
+	border: 1px solid #cdcdcd;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+}
+
+.inputBox input::placeholder {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 24px;
+	color: #808080;
+}
+
+.inputBox h5 {
+	text-align: left;
+	margin-left: 0.2rem;
+	margin-top: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+
+
+.country {
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #808080;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__input {
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 86%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 20px;
+		gap: 20px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__inputStreet {
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__next {
+		border: 1px solid #1d71b8 !important;
+		border: none;
+		border-radius: 8px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-top: 3rem;
+	}
+
+	&__back {
+		border: none;
+		border-radius: 8px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-top: 3rem;
+	}
+}
+
+.uploadedImage {
+	width: 7rem;
+	margin-left: -0.9rem;
+	margin-top: -1rem;
+	border-radius: 50%;
+}
+
+.mySelect__value-container {
+	height: 52px;
+}
+
+& h5 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #323232;
+
+}
+
+}
+
+.freelanceravailable_wrapper {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+
+@media  ( max-width: 1700px ){
+	.photoCard_freelancer {
+	position: absolute;
+    z-index: 2;
+	background: white;
+	top: -25px;
+    right: 600px;
+	height: 440px;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+
+.countryCard {
+	background: white;
+	width: 750px;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 10px;
+}
+
+.imageUp {
+	margin: auto;
+	width: 5rem;
+	height: 5rem;
+	background-position: center;
+	background-color: #f5f5f7;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	border: 1px solid #cdcdcd;
+	padding: 1rem 1.2rem 1rem 1rem;
+}
+
+.imageUpload:hover .title {
+	color: #1d71b8;
+    cursor: pointer;
+}
+
+.imageUpload:hover .imageUp {
+	cursor: pointer;
+	background-color: #dfe8f1;
+}
+
+& h3 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #808080;
+	margin-top: 1rem;
+}
+
+.inputBox {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.inputBox input {
+	width: 87%;
+	padding: 1rem;
+	border-radius: 5px;
+	border: 1px solid #cdcdcd;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #323232;
+}
+
+.inputBox input::placeholder {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 24px;
+	color: #808080;
+}
+
+.inputBox h5 {
+	text-align: left;
+	margin-left: 0.2rem;
+	margin-top: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+
+
+.country {
+	&__title {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 37px;
+		color: #323232;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		margin: 0;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #808080;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #323232;
+		margin-bottom: 8px;
+	}
+
+	&__input {
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 86%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 20px;
+		gap: 20px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__inputStreet {
+		font-family: "Montserrat", sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #808080;
+		padding: 15px 20px;
+		width: 94%;
+		border: 1px solid #cdcdcd;
+		border-radius: 8px;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__next {
+		border: 1px solid #1d71b8 !important;
+		border: none;
+		border-radius: 8px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-top: 3rem;
+	}
+
+	&__back {
+		border: none;
+		border-radius: 8px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #323232;
+		background: #ffffff;
+		padding: 1rem 2rem;
+		margin-top: 3rem;
+	}
+}
+
+.uploadedImage {
+	width: 7rem;
+	margin-left: -0.9rem;
+	margin-top: -1rem;
+	border-radius: 50%;
+}
+
+.mySelect__value-container {
+	height: 52px;
+}
+
+& h5 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #323232;
+
+}
+
+}
+
+.freelanceravailable_wrapper {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+
+}

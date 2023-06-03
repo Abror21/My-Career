@@ -1,0 +1,20 @@
+.cardTransition-enter {
+	transition: 0.5s;
+	transform: translateY(100%);
+}
+
+.cardTransition-enter-active {
+	opacity: 1;
+	transform: translateY(-57%);
+	transition: opacity 500ms, transform 500ms;
+}
+
+.cardTransition-exit {
+	transition: 0.5s;
+	transform: translateY(-100%);
+}
+
+.cardTransition-exit-active {
+	opacity: 0;
+	transition: opacity 500ms, transform 500ms;
+}
