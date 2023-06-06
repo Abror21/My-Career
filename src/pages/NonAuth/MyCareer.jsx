@@ -11,7 +11,6 @@ function MyCareer() {
 			<div className="container">
 				<div className={classes.careerBox__wrapper}>
 					<div className={classes.career}>
-						{" "}
 						<img src={career} alt="My career" />
 						<div className={classes.power}>Powerful platform for your career</div>
 					</div>

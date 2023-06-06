@@ -4,7 +4,7 @@ import {
 import LoginSlice from "./loginSlice/LoginSlice";
 import resumeSlice from "./resumeSlice/ResumeSlice";
 import FreelanceSlice from "./freelancerSlice/FreelancerSlice";
-import lenguage from "./lenguageSlice/LenguageSlice"
+import language from "./languageSlice/LanguageSlice"
 import contract from "./contractSlice/contractSlice"
 import resumeControle from "./resumeControlsSlice/resumeControls"
 import companyRegister from "./companyRegister/companyRegister";
@@ -17,13 +17,13 @@ const store = configureStore({
 		login: LoginSlice,
 		resume: resumeSlice,
 		freelance: FreelanceSlice,
-		lenguage,
+		language,
 		contract,
 		resumeControle,
 		companyRegister,
 		jobs: JobsSlice,
 		project: projectSlice,
-		frilanserCardSlice:frilanserCardSlice
+		frilanserCardSlice: frilanserCardSlice
 	},
 	middleware: getDefaultMiddleware =>
 		getDefaultMiddleware({

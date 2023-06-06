@@ -1,4 +1,4 @@
-import { addToCompany, addToFreelancer, claimsGet, logInRequest, registerRequest, resumeFinishPost, userRoles } from "reduxToolkit/extraReducers";
+import { addToCompany, addToFreelancer, logInRequest, registerRequest, resumeFinishPost, userRoles } from "reduxToolkit/extraReducers";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
 	loading: false,
@@ -11,8 +11,6 @@ const initialState = {
 	loginResponseError: null,
 	resumeOnSuccess: ""
 };
-
-/////////erlan\\\\\\\\\\
 
 const logInSlice = createSlice({
 	name: "loginRegister",
@@ -39,17 +37,6 @@ const logInSlice = createSlice({
 	},
 
 	extraReducers: builder => {
-		///////////////////CLAIMS REDUCER/////////////////
-		// builder.addCase(claimsGet.pending, (state, action) => {
-		// 	state.loading = true;
-		// });
-		// builder.addCase(claimsGet.fulfilled, (state, action) => {
-		// 	state.loading = false;
-		// });
-		// builder.addCase(claimsGet.rejected, (state, action) => {
-		// 	state.loading = false;
-		// 	state.error = action.error.message;
-		// });
 
 		///////////////////LOG_IN REDUCER/////////////////
 		builder.addCase(logInRequest.pending, (state, action) => {

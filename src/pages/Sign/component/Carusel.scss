@@ -4,34 +4,41 @@
 //   box-sizing: border-box;
 // //   overflow: hidden;
 // }
-.body1{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.body1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.carusel{
+
+.carusel {
   transform: rotate(15deg);
   position: absolute;
-  right:-20px;
+  right: 500px;
 }
-.carusel2{
 
+.carusel2 {
   transform: rotate(15deg);
   position: absolute;
   // width: 1000px;
-  right: 310px;
+  right: 330px;
 }
-.carusel_items{
+
+.carusel_items {
   display: grid;
   animation: carusel 40s linear infinite;
 }
-.carusel_item{
+
+.carusel_item {
 
   display: grid;
   animation: carusels 40s linear infinite;
 }
-.carusel_img{
+
+.carusel_img {
 
   filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
   display: block;
@@ -39,38 +46,41 @@
   padding: 20px;
   width: 300px;
 }
-@keyframes carusel{
-  100%{
+
+@keyframes carusel {
+  100% {
     transform: translateY(500px);
   }
 }
-@keyframes carusels{
-  100%{
+
+@keyframes carusels {
+  100% {
     transform: translateY(-500px);
   }
 }
 
-@media ( min-width: 1920px ) {
+@media (min-width: 1920px) {
 
-.carusel{
-  transform: rotate(15deg);
-  position: absolute;
-  right:-20px;
-}
-.carusel2{
+  .carusel {
+    transform: rotate(15deg);
+    position: absolute;
+    right: -20px;
+  }
 
-  transform: rotate(15deg);
-  position: absolute;
-  right: 410px;
-}
+  .carusel2 {
 
-.carusel_img{
+    transform: rotate(15deg);
+    position: absolute;
+    right: 410px;
+  }
 
-  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
-  display: block;
-  object-fit: cover;
-  padding: 20px;
-  width: 380px;
+  .carusel_img {
 
-}
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
+    display: block;
+    object-fit: cover;
+    padding: 20px;
+    width: 380px;
+
+  }
 }

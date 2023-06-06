@@ -2,18 +2,20 @@ import React, { useLayoutEffect, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes, Navigate, useNavigate, useLocation } from "react-router-dom";
 import Header from "components/Layout/Header/Header";
-import { createCompany, createProfileRoute, freelancerResume, freelancerRouter, publicRoute } from "routes";
-import { claimsGet } from "reduxToolkit/extraReducers";
+import { createCompany, freelancerResume, freelancerRouter } from "routes";
 import jwt_decode from "jwt-decode";
+import Login from "pages/Sign/Login/Login";
+import Signup from "pages/Sign/Signup/Signup";
+import PageBackground from './pages/NonAuth/Background';
 
 function App() {
 	const auth = useSelector(state => state.login.loggedIn);
-	const len = useSelector(state => state.lenguage.lenguage);
+	const lang = useSelector(state => state.language.language);
 	const freelancerOrCompony = useSelector(state => state.login.freelancerOrCompony);
 	const loginOnSuccess = useSelector(state => state.login.loginOnSuccess);
 	const contactsIsSuccess = useSelector(state => state.companyRegister.contactsIsSuccess);
 	const dispatch = useDispatch();
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 	const { pathname } = useLocation();
 	const freelancer = localStorage.getItem("isResume") ? localStorage.getItem("isResume") : "welcome";
 
@@ -27,15 +29,8 @@ function App() {
 	}
 
 	// useLayoutEffect(() => {
-	// 	navigate(`/${len}/`)
-	// }, [len, navigate])
-
-	useEffect(
-		() => {
-			dispatch(claimsGet());
-		},
-		[dispatch]
-	);
+	// 	navigate(`/${lang}/`)
+	// }, [lang, navigate])
 
 	// useEffect(() => {
 	// 	if (loginOnSuccess || contactsIsSuccess) {
@@ -45,52 +40,62 @@ function App() {
 
 	return (
 		<div className="App">
-			{auth === false && (
+			{
+				auth === false &&
 				<Routes>
-					{publicRoute.map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-					<Route path="*" element={<Navigate to={`/${len}/`} />} />
+					<Route path={`/${lang}/`} element={<PageBackground />} />
+					<Route path={`/${lang}/login`} element={<Login />} />
+					<Route path={`/${lang}/sign-up`} element={<Signup />} />
+					<Route path="*" element={<Navigate to={`/${lang}/`} />} />
 				</Routes>
-			)}
-			{freelanceOrCompany !== "Company" && freelanceOrCompany !== "Freelancer" ? (
-				freelancer === "freelancer" ? (
-					<Routes>
-						{freelancerResume.map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-						<Route path="*" element={<Navigate to={`/${len}/welcome/create-profile`} />} />
-					</Routes>
-				) : freelancer === "company" ? (
-					<Routes>
-						{createCompany.map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-						<Route path="*" element={<Navigate to={`/${len}/welcome/register-company`} />} />
-					</Routes>
-				) : (
-					<Routes>
-						{createProfileRoute.map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-						<Route path="*" element={<Navigate to={`/${len}/welcome`} />} />
-					</Routes>
-				)
-			) : (
-				<div className={`freelanser-box  ${pathname.slice(4) === "contact" || pathname.slice(4) === "about" ? "freelanser-box-bg1" : "freelanser-box-bg2"}`}>
-					<Header />
-					{freelanceOrCompany === true && (
-						<Routes>
-							{freelancerRouter.map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-							<Route path={pathname.slice(0, 4)} element={<Navigate to={`/${len}/jobs`} />} />
-							<Route path={`/${len}/login`} element={<Navigate to={`/${len}/jobs`} />} />
-							<Route path={`/${len}/welcome`} element={<Navigate to={`/${len}/jobs`} />} />
-							<Route path={`/${len}/welcome/create-profile/:resumeId`} element={<Navigate to={`/${len}/jobs`} />} />
-						</Routes>
-					)}
-					{freelanceOrCompany === false && (
-						<Routes>
-							{freelancerRouter.slice(0, 4).map(route => <Route path={`/${len}${route.path}`} element={route.element} key={route.id} />)}
-							<Route path={pathname.slice(0, 4)} element={<Navigate to={`/${len}/talants`} />} />
-							<Route path={`/${len}/login`} element={<Navigate to={`/${len}/talants`} />} />
-							<Route path={`/${len}/welcome`} element={<Navigate to={`/${len}/talants`} />} />
-							<Route path={`/${len}/welcome/create-profile/:resumeId`} element={<Navigate to={`/${len}/talants`} />} />
-						</Routes>
-					)}
-				</div>
-			)}
+			}
+			{
+				freelanceOrCompany !== "Company" && freelanceOrCompany !== "Freelancer" ?
+					(
+						freelancer === "freelancer" ?
+							<Routes>
+								{freelancerResume.map(route => <Route path={`/${lang}${route.path}`} element={route.element} key={route.id} />)}
+								<Route path="*" element={<Navigate to={`/${lang}/welcome/create-profile`} />} />
+							</Routes>
+							:
+							(
+								freelancer === "company" ?
+									<Routes>
+										{createCompany.map(route => <Route path={`/${lang}${route.path}`} element={route.element} key={route.id} />)}
+										<Route path="*" element={<Navigate to={`/${lang}/register-company`} />} />
+									</Routes>
+									:
+									<Routes>
+										<Route path={`/${lang}/`} element={<PageBackground />} />
+										<Route path={`/${lang}/login`} element={<Login />} />
+										<Route path={`/${lang}/sign-up`} element={<Signup />} />
+										<Route path="*" element={<Navigate to={`/${lang}/`} />} />
+									</Routes>
+							)
+					) : (
+						<div className={`freelanser-box  ${pathname.slice(4) === "contact" || pathname.slice(4) === "about" ? "freelanser-box-bg1" : "freelanser-box-bg2"}`}>
+							<Header />
+							{freelanceOrCompany === true && (
+								<Routes>
+									{freelancerRouter.map(route => <Route path={`/${lang}${route.path}`} element={route.element} key={route.id} />)}
+									<Route path={pathname.slice(0, 4)} element={<Navigate to={`/${lang}/jobs`} />} />
+									<Route path={`/${lang}/login`} element={<Navigate to={`/${lang}/jobs`} />} />
+									<Route path={`/${lang}/welcome`} element={<Navigate to={`/${lang}/jobs`} />} />
+									<Route path={`/${lang}/welcome/create-profile/:resumeId`} element={<Navigate to={`/${lang}/jobs`} />} />
+								</Routes>
+							)}
+							{freelanceOrCompany === false && (
+								<Routes>
+									{freelancerRouter.slice(0, 4).map(route => <Route path={`/${lang}${route.path}`} element={route.element} key={route.id} />)}
+									<Route path={pathname.slice(0, 4)} element={<Navigate to={`/${lang}/talants`} />} />
+									<Route path={`/${lang}/login`} element={<Navigate to={`/${lang}/talants`} />} />
+									<Route path={`/${lang}/welcome`} element={<Navigate to={`/${lang}/talants`} />} />
+									<Route path={`/${lang}/welcome/create-profile/:resumeId`} element={<Navigate to={`/${lang}/talants`} />} />
+								</Routes>
+							)}
+						</div>
+					)
+			}
 		</div>
 	);
 }

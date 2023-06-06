@@ -34,7 +34,7 @@ export const EDUCATIONDELETE = `${BASE_URL}/api/education/`;
 // export const ADDTOFREELANCER = `${BASE_URL}/addtofreelancer`;
 // export const ADDTOCOMPANY = `${BASE_URL}/addtocompany`;
 export const FREELANCER = `${BASE_URL}/api/freelancer`;
-export const CLAIMS = `${BASE_URL}/CLAIMS`;
+// export const CLAIMS = `${BASE_URL}/CLAIMS`;
 // export const CLAIMS = `${BASE_URL}/CLAIMS`;
 export const SKILLS = `${BASE_URL}/api/skill?position=`;
 // export const SKILLS = "http://185.217.131.133:7152/api/skill?position=";

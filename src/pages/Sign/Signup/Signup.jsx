@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Signup.scss";
 import sign_logo from "../../../assets/images/Sign/sign_logo.svg";
 // import login_circle from '../../../assets/images/Sign/login_circle.png'
@@ -16,6 +16,12 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 const Signup = () => {
+
+	// useEffect(() => {
+	// 	fetch('http://185.217.131.133:7152/api/auth/register')
+	// 		.then(res => console.log(res))
+	// }, [])
+
 	const { t } = useTranslation()
 
 	const [passwordEye, setPasswordEye] = useState('password')
@@ -25,7 +31,6 @@ const Signup = () => {
 		setPasswordEye(passwordEye === 'password' ? 'text' : 'password')
 	}
 
-
 	const PasswordFunc1 = () => {
 		setPasswordEye1(passwordEye1 === 'password' ? 'text' : 'password')
 	}
@@ -34,17 +39,15 @@ const Signup = () => {
 		password: "",
 		confirmPassword: "",
 	})
-	const len = useSelector(state => state.lenguage.lenguage)
+	const lang = useSelector(state => state.language.language)
 	const { checkEmail, bodyErrors } = useSelector(state => state.login)
 	const dispatch = useDispatch()
 
-	console.log(checkEmail)
 	const handlerSubmit = (e) => {
 		e.preventDefault()
 		dispatch(registerRequest(data))
 		var dateObj = new Date();
-		const monthNames = ["January", "February", "March", "April", "May", "June",
-  		"July", "August", "September", "October", "November", "December"];
+		const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		var month = dateObj.getUTCMonth(); //months from 1-12
 		var day = dateObj.getUTCDate();
 		var year = dateObj.getUTCFullYear();
@@ -58,12 +61,12 @@ const Signup = () => {
 				<img className="login_bg_img" src={login_ellipse} alt="login background images" />
 				<div className="login_container_wrapper">
 					<img src={sign_logo} className="login_container_wrapper_logo" alt="" />
-					{!checkEmail ? (    
+					{!checkEmail ? (
 						<form className="login_form" onSubmit={handlerSubmit}>
 							<h3 className="login_form_title">{t("signup")}</h3>
 
 							<p className="login_form_info">
-								Do you have an account? <Link to={`/${len}/login`}>Log in </Link>now!
+								Do you have an account? <Link to={`/${lang}/login`}>Log in </Link>now!
 							</p>
 
 
@@ -110,7 +113,7 @@ const Signup = () => {
 
 							<div style={{ 'position': "relative" }} >
 								<input
-									requiredx
+									required
 									className={`login_form_inp login_form_inp2 ${bodyErrors?.PasswordConfirmError?.length ? "register-danger-input" : bodyErrors ? "register-success" : ""}`}
 									type={passwordEye}
 									placeholder="Confirm password"

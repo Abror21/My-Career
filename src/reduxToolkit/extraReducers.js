@@ -33,18 +33,9 @@ import {
 	ADD_LOCATION_COMPANY,
 	ADD_CONTACTS_COMPANY
 } from "./URLS";
-// ADDTOCOMPANY, ADDTOFREELANCER, CLAIMS, USERROLES,
-/////////////////////////////////////CLAIMS GET///////////////////////
-export const claimsGet = createAsyncThunk("claims", async payload => {
-	return axios({
-		method: "GET",
-		url: CLAIMS
-	}).then(res => res.data);
-});
 
 /////////////////////////////////////REGISTER POST///////////////////////
 export const registerRequest = createAsyncThunk("token/register", async payload => {
-	console.log(payload);
 	return axios({
 		method: "POST",
 		url: REGISTER,

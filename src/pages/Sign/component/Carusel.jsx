@@ -30,47 +30,48 @@ import carusel_img27 from '../../../assets/images/Sign/carusel27.png'
 import carusel_img28 from '../../../assets/images/Sign/carusel28.png'
 import carusel_img29 from '../../../assets/images/Sign/carusel29.png'
 const Carusel = () => {
-    return (
+  return (
     <div className='body1'>
+      
       <div className="carusel">
-     <div className='carusel_items'>
-       <img className='carusel_img' src={carusel_img1} alt="" />
-       <img className='carusel_img' src={carusel_img2} alt="" />
-       <img className='carusel_img' src={carusel_img3} alt="" />
-       <img className='carusel_img' src={carusel_img4} alt="" />
-       <img className='carusel_img' src={carusel_img5} alt="" />
-       <img className='carusel_img' src={carusel_img6} alt="" />
-       <img className='carusel_img' src={carusel_img7} alt="" />
-       <img className='carusel_img' src={carusel_img8} alt="" />
-       <img className='carusel_img' src={carusel_img9} alt="" />
-       <img className='carusel_img' src={carusel_img10} alt="" />
-       <img className='carusel_img' src={carusel_img11} alt="" />
-       <img className='carusel_img' src={carusel_img12} alt="" />
-       <img className='carusel_img' src={carusel_img13} alt="" />
-       <img className='carusel_img' src={carusel_img14} alt="" />
+        <div className='carusel_items'>
+          <img className='carusel_img' src={carusel_img1} alt="" />
+          <img className='carusel_img' src={carusel_img2} alt="" />
+          <img className='carusel_img' src={carusel_img3} alt="" />
+          <img className='carusel_img' src={carusel_img4} alt="" />
+          <img className='carusel_img' src={carusel_img5} alt="" />
+          <img className='carusel_img' src={carusel_img6} alt="" />
+          <img className='carusel_img' src={carusel_img7} alt="" />
+          <img className='carusel_img' src={carusel_img8} alt="" />
+          <img className='carusel_img' src={carusel_img9} alt="" />
+          <img className='carusel_img' src={carusel_img10} alt="" />
+          <img className='carusel_img' src={carusel_img11} alt="" />
+          <img className='carusel_img' src={carusel_img12} alt="" />
+          <img className='carusel_img' src={carusel_img13} alt="" />
+          <img className='carusel_img' src={carusel_img14} alt="" />
+        </div>
+      </div>
 
-     </div>
+      <div className="carusel2">
+        <div className='carusel_item'>
+          <img className='carusel_img' src={carusel_img15} alt="" />
+          <img className='carusel_img' src={carusel_img16} alt="" />
+          <img className='carusel_img' src={carusel_img17} alt="" />
+          <img className='carusel_img' src={carusel_img18} alt="" />
+          <img className='carusel_img' src={carusel_img19} alt="" />
+          <img className='carusel_img' src={carusel_img20} alt="" />
+          <img className='carusel_img' src={carusel_img21} alt="" />
+          <img className='carusel_img' src={carusel_img22} alt="" />
+          <img className='carusel_img' src={carusel_img23} alt="" />
+          <img className='carusel_img' src={carusel_img24} alt="" />
+          <img className='carusel_img' src={carusel_img25} alt="" />
+          <img className='carusel_img' src={carusel_img26} alt="" />
+          <img className='carusel_img' src={carusel_img27} alt="" />
+          <img className='carusel_img' src={carusel_img28} alt="" />
+          <img className='carusel_img' src={carusel_img29} alt="" />
+        </div>
+      </div>
 
-    </div>
-    <div className="carusel2">
-     <div className='carusel_item'>
-        <img className='carusel_img' src={carusel_img15} alt="" />
-       <img className='carusel_img' src={carusel_img16} alt="" />
-       <img className='carusel_img' src={carusel_img17} alt="" />
-       <img className='carusel_img' src={carusel_img18} alt="" />
-       <img className='carusel_img' src={carusel_img19} alt="" />
-       <img className='carusel_img' src={carusel_img20} alt="" />
-       <img className='carusel_img' src={carusel_img21} alt="" />
-       <img className='carusel_img' src={carusel_img22} alt="" />
-       <img className='carusel_img' src={carusel_img23} alt="" />
-       <img className='carusel_img' src={carusel_img24} alt="" />
-       <img className='carusel_img' src={carusel_img25} alt="" />
-       <img className='carusel_img' src={carusel_img26} alt="" />
-       <img className='carusel_img' src={carusel_img27} alt="" />
-       <img className='carusel_img' src={carusel_img28} alt="" />
-       <img className='carusel_img' src={carusel_img29} alt="" />
-     </div>
-    </div>
     </div>
   );
 }

@@ -20,15 +20,15 @@ function Contactus(props) {
 						</div>
 					</div>
 
-					<div className={classes.contactUs}>
+					<form className={classes.contactUs}>
 						<h1 className={classes.contactUs__title}>Contact us</h1>
 						<p className={classes.contactUs__desc}>Fill in the blank and we will contact you</p>
 						<input type="text" placeholder="Name" required />
 						<input type="email" placeholder="E-mail" required />
 						<input type="number" placeholder="+998 99 999 99 99" min="1" max="13" required />
 						<textarea className={classes.textMessage} type="text" placeholder="Text message" required></textarea>
-						<button>Send</button>
-					</div>
+						<button type="submit">Send</button>
+					</form>
 				</div>
 			</div>
 		</section>

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import classes from "./Background.module.scss";
 import logo from "../../assets/images/text.png";
 import Round from "./Round";
@@ -6,7 +6,6 @@ import MyCareer from "./MyCareer";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
-import { useState } from "react";
 import classesNav from "./Navigation.module.scss";
 import Talants from "./pages/talants/Talants";
 import CircleSlider from "./CircleSlider";
@@ -19,7 +18,13 @@ import backgroundImg from "../../assets//images/home-header-bg.png";
 
 function Background() {
 	const [count, setCount] = useState(1);
-	const len = useSelector(state => state.lenguage.lenguage);
+	const lang = useSelector(state => state.language.language);
+
+	// useEffect(() => {
+	// 	fetch('http://185.217.131.133:7152/api/contacts-us')
+	// 		.then(res => console.log(res))
+	// }, [])
+
 
 	let step1 = false,
 		step2 = false,
@@ -29,6 +34,7 @@ function Background() {
 		step6 = false,
 		step7 = false,
 		step8 = false;
+
 	switch (count) {
 		case 1:
 			step1 = true;
@@ -48,15 +54,12 @@ function Background() {
 		case 6:
 			step6 = true;
 			break;
-
 		case 7:
 			step7 = true;
 			break;
-
 		case 8:
 			step8 = true;
 			break;
-
 		default:
 			step1 = true;
 	}
@@ -70,6 +73,7 @@ function Background() {
 						<div className={classesNav.menu__inner}>
 							<img className={classesNav.automative} src={logo} alt="Automative logo" />
 							<ul className={classesNav.menu__links}>
+
 								<li className={step1 || step2 || step3 || step4 ? classesNav.active : classesNav.menu__link} onClick={() => setCount(1)}>
 									Home
 								</li>
@@ -85,12 +89,13 @@ function Background() {
 								<li className={step8 ? classesNav.active : classesNav.menu__link} onClick={() => setCount(8)}>
 									Contact us
 								</li>
+
 							</ul>
 							<div className={classesNav.menu__buttons}>
-								<Link to={`/${len}/login`}>
+								<Link to={`/${lang}/login`}>
 									<button className={classesNav.menu__login}>Log in</button>
 								</Link>
-								<Link to={`/${len}/sign-up`}>
+								<Link to={`/${lang}/sign-up`}>
 									<button className={classesNav.menu__signup}>Sign up</button>
 								</Link>
 							</div>

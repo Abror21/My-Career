@@ -15,7 +15,7 @@ function JobsDesc(props) {
 	const [jobs, setJobs] = useState([]);
 	const [filteredJobs, setFilterJobs] = useState(jobs);
 
-	const len = useSelector(state => state.lenguage.lenguage)
+	const lang = useSelector(state => state.language.language)
 
 	useEffect(() => {
 		setJobs(jobsData);
@@ -61,7 +61,7 @@ function JobsDesc(props) {
 				{filteredJobs.map((item, index) => (
 					<div className={classes.jobsCardItem} key={index} id={index}>
 						<div className={classes.jobsCardItemHeader}>
-							<Link to={`/${len}/jobAd`}><p className={classes.title}>{item.title}</p></Link>
+							<Link to={`/${lang}/jobAd`}><p className={classes.title}>{item.title}</p></Link>
 							<span className={classes.headerVerLine}></span>
 							<p className={classes.paymentPerHour}>{item.paymentPerHour}</p>
 							<span className={classes.headerVerLine}></span>

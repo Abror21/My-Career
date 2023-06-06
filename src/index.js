@@ -8,8 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.min.css";
+// import "swiper/components/navigation/navigation.scss";
+// import "swiper/components/pagination/pagination.min.css";
 
 import "./assets/styles/main.css";
 import "./assets/styles/ui.scss";
