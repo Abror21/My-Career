@@ -9,7 +9,7 @@ import { BsChevronDown} from 'react-icons/bs'
 const Job = (props) => {
 
     const [clientJobs, setClientJobs] = useState('best')
-    const len = useSelector(state => state.lenguage.lenguage)
+    const lang = useSelector(state => state.language.language)
     const { pathname } = useLocation();
 
     const openModal = () => {

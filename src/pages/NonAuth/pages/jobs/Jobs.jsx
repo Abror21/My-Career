@@ -2,7 +2,7 @@ import React from "react";
 import LoginDesc from "../LoginDesc";
 import classes from "./Jobs.module.scss";
 import JobsDesc from "./JobsDesc";
-function Jobs(props) {
+function Jobs() {
 	return (
 		<div className={classes.jobs}>
 			<div className="container">

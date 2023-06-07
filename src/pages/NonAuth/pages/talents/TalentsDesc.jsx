@@ -3,29 +3,29 @@ import searchIcon from "../../../../assets/images/searchIcon.png";
 import locImg from "../../../../assets/images/locImg.png";
 import checkImg from "../../../../assets/images/checkImg.png";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import talantsData from "./talantsData";
-import classes from "./TalantsDesc.module.scss";
+import talentsData from "./talentsData";
+import classes from "./TalentsDesc.module.scss";
 
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 
-function TalantsDesc(props) {
+function TalentsDesc(props) {
 	const [likes, setLikes] = useState([]);
 	const [isActive, setIsActive] = useState([]);
 
 	const [searchField, setSearchField] = useState("");
-	const [talants, setTalants] = useState([]);
-	const [filteredTalants, setFilterTalants] = useState(talants);
+	const [talents, setTalents] = useState([]);
+	const [filteredTalents, setFilterTalents] = useState(talents);
 
 	useEffect(() => {
-		setTalants(talantsData);
+		setTalents(talentsData);
 	}, []);
 
 	useEffect(() => {
-		const newFilteredTalants = talants.filter(talant => {
+		const newFilteredTalents = talents.filter(talant => {
 			return talant.name?.toLocaleLowerCase().includes(searchField);
 		});
-		setFilterTalants(newFilteredTalants);
-	}, [talants, searchField]);
+		setFilterTalents(newFilteredTalents);
+	}, [talents, searchField]);
 
 	const onSearchChange = event => {
 		const searchFieldString = event.target.value?.toLocaleLowerCase();
@@ -47,20 +47,20 @@ function TalantsDesc(props) {
 	};
 
 	return (
-		<div className={classes.talantsDesc}>
-			<div className={classes.talantsCard}>
-				<div className={classes.talantsSearch}>
-					<div className={classes.talantsSearchForm}>
+		<div className={classes.talentsDesc}>
+			<div className={classes.talentsCard}>
+				<div className={classes.talentsSearch}>
+					<div className={classes.talentsSearchForm}>
 						<input type="search" placeholder="Title, keywords..." onChange={onSearchChange} />
 						<button type="submit">
 							<img src={searchIcon} alt="Search Icnon" />
 						</button>
 					</div>
 				</div>
-				<div className={classes.talantsDescCard}>
-					{filteredTalants.map((item, index) => (
-						<div className={classes.talantsDescItem} key={index} id={index}>
-							<div className={classes.talantsDescItemHeader}>
+				<div className={classes.talentsDescCard}>
+					{filteredTalents.map((item, index) => (
+						<div className={classes.talentsDescItem} key={index} id={index}>
+							<div className={classes.talentsDescItemHeader}>
 								<div className={classes.imgName}>
 									<img src={item.userImg} alt="UserLogo" />
 									<div className={classes.namePro}>
@@ -70,7 +70,7 @@ function TalantsDesc(props) {
 										<span>{item.userPro}</span>
 									</div>
 								</div>
-								<div className={classes.talantsLine}></div>
+								<div className={classes.talentsLine}></div>
 								<div className={classes.jobSuccess}>
 									<p>{item.jobSuccess}</p>
 									<div className={classes.blueLine}>
@@ -79,17 +79,17 @@ function TalantsDesc(props) {
 									</div>
 									<span>Job Success</span>
 								</div>
-								<div className={classes.talantsLine}></div>
+								<div className={classes.talentsLine}></div>
 								<div className={classes.hourRate}>
 									<p>{item.hourly}</p>
 									<span>Hourly</span>
 								</div>
-								<div className={classes.talantsLine}></div>
+								<div className={classes.talentsLine}></div>
 								<div className={classes.completedJobs}>
 									<p>{item.completedJobs}</p>
 									<span>Completed jobs</span>
 								</div>
-								<div className={classes.talantsLine}></div>
+								<div className={classes.talentsLine}></div>
 								<div className={classes.liked} onClick={onClickLike.bind(this, item)}>
 									{likes.findIndex(x => x === item.id) >= 0 ? (
 										<BsHeartFill className={classes.bsheartfill} />
@@ -149,4 +149,4 @@ function TalantsDesc(props) {
 	);
 }
 
-export default TalantsDesc;
+export default TalentsDesc;

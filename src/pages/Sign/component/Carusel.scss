@@ -1,11 +1,7 @@
-// *{
-//   padding: 0;
-//   margin: 0;
-//   box-sizing: border-box;
-// //   overflow: hidden;
-// }
 .body1 {
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -17,25 +13,24 @@
 .carusel {
   transform: rotate(15deg);
   position: absolute;
-  right: 500px;
+  right: 8% !important;
 }
 
 .carusel2 {
   transform: rotate(15deg);
   position: absolute;
-  // width: 1000px;
-  right: 330px;
+  right: 32% !important;
 }
 
 .carusel_items {
   display: grid;
-  animation: carusel 40s linear infinite;
+  animation: carusel 40s linear infinite alternate;
 }
 
 .carusel_item {
 
   display: grid;
-  animation: carusels 40s linear infinite;
+  animation: carusels 40s linear infinite alternate;
 }
 
 .carusel_img {
@@ -48,6 +43,7 @@
 }
 
 @keyframes carusel {
+  
   100% {
     transform: translateY(500px);
   }

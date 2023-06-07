@@ -104,14 +104,16 @@ function JobsDesc(props) {
 						</div>
 						<div className={classes.jobsCardHorLine}></div>
 						<div className={classes.skills}>
-							{item.skills.map((skilItem, index) => (
-								<>
-									<p key={index} id={index}>
-										{skilItem}
-									</p>
-									<div className={classes["skills-border"]}></div>
-								</>
-							))}
+							{
+								item.skills.map((skilItem, index) => (
+									<React.Fragment key={index}>
+										<p key={index} id={index}>
+											{skilItem}
+										</p>
+										<div className={classes["skills-border"]}></div>
+									</React.Fragment>
+								))
+							}
 						</div>
 						<div className={classes.cardItemBottom}>
 							<div className={classes.imgCompName}>

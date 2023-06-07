@@ -1,4 +1,3 @@
-import React, { useLayoutEffect, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Route, Routes, Navigate, useNavigate, useLocation } from "react-router-dom";
 import Header from "components/Layout/Header/Header";
@@ -7,6 +6,11 @@ import jwt_decode from "jwt-decode";
 import Login from "pages/Sign/Login/Login";
 import Signup from "pages/Sign/Signup/Signup";
 import PageBackground from './pages/NonAuth/Background';
+import Talants from "pages/NonAuth/pages/talents/Talents";
+import Aboutus from "pages/NonAuth/Aboutus";
+import Contactus from "pages/NonAuth/Contactus";
+import Jobs from "pages/NonAuth/pages/jobs/Jobs";
+import HomeContentSwitcher from "pages/NonAuth/HomeContentSwitcher";
 
 function App() {
 	const auth = useSelector(state => state.login.loggedIn);
@@ -66,10 +70,16 @@ function App() {
 									</Routes>
 									:
 									<Routes>
-										<Route path={`/${lang}/`} element={<PageBackground />} />
-										<Route path={`/${lang}/login`} element={<Login />} />
-										<Route path={`/${lang}/sign-up`} element={<Signup />} />
-										<Route path="*" element={<Navigate to={`/${lang}/`} />} />
+										<Route path={`${lang}/`} element={<PageBackground />}>
+											<Route path="home" element={<HomeContentSwitcher />} />
+											<Route path="talents" element={<Talants />} />
+											<Route path="jobs" element={<Jobs />} />
+											<Route path="about-us" element={<Aboutus />} />
+											<Route path="contact-us" element={<Contactus />} />
+										</Route>
+										<Route path={`${lang}/login`} element={<Login />} />
+										<Route path={`${lang}/sign-up`} element={<Signup />} />
+										<Route path="*" element={<Navigate to={`/${lang}/home`} />} />
 									</Routes>
 							)
 					) : (

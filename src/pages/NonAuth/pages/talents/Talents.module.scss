@@ -1,7 +1,7 @@
-.talants {
+.talents {
 	padding-top: 30px;
 
-	.talants__container {
+	.talents__container {
 		width: 100%;
 		padding: 40px 30px 0 40px;
 		height: 636px;
@@ -16,35 +16,35 @@
 }
 
 @media only screen and (max-width: 1756px) {
-	.talants {
+	.talents {
 		padding-top: 10px;
 
-		.talants__container {
+		.talents__container {
 			height: 566px;
 		}
 	}
 }
 
 @media only screen and (max-width: 1456px) {
-	.talants {
+	.talents {
 		padding-top: 20px;
 
-		.talants__container {
+		.talents__container {
 			height: 466px;
 		}
 	}
 }
 
 @media only screen and (max-width: 1356px) {
-	.talants {
-		.talants__container {
+	.talents {
+		.talents__container {
 			height: 446px;
 		}
 	}
 }
 
 @media only screen and (max-height: 816px) {
-	.talants__container {
+	.talents__container {
 		margin: 0 auto;
 		padding: 30px 20px 0 30px !important;
 	}

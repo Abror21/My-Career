@@ -5,7 +5,7 @@ import google from "../../../assets/images/google.png";
 import facebook from "../../../assets/images/facebook.png";
 import github from "../../../assets/images/github.png";
 import macplay from "../../../assets/images/mac.png";
-function LoginDesc(props) {
+function LoginDesc() {
 	return (
 		<div className={classes.loginDesc}>
 			<div className={classes.loginDescContent}>

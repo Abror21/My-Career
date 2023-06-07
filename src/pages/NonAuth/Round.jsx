@@ -13,7 +13,6 @@ import innerImg10 from "../../assets/images/round/94.png";
 
 function Round() {
 	return (
-
 		<div className={classes.outerBox}>
 			<div className={classes.roundBack}></div>
 			<div className={classes.roundOne}>
@@ -41,7 +40,6 @@ function Round() {
 				</div>
 			</div>
 		</div>
-
 	);
 }
 

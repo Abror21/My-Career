@@ -16,7 +16,7 @@ import Job from './components/cards/Job'
 const Jobs = (props) => {
 
     const [clientJobs, setClientJobs] = useState('best')
-    const len = useSelector(state => state.lenguage.lenguage)
+    const len = useSelector(state => state.lenguage.leznguage)
     const { pathname } = useLocation();
 
 

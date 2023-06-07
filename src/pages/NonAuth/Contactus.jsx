@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Contactus.module.scss";
 import logosInstagram from "../../assets/images/icons/logos_telegram.png";
 import logosWhatsapp from "../../assets/images/icons/logos_whatsapp.png";
 
 function Contactus(props) {
+
+	// useEffect(() => {
+	// 	fetch('http://185.217.131.133:7152/api/contacts-us', {
+	// 		method: 'POST',
+	// 		headers: {
+	// 			"content-type": "application/json"
+	// 		},
+	// 		body: JSON.stringify({
+	// 			name: "Ali",
+	// 			email: 'Ali@test.com',
+	// 			phone: '+998971234567',
+	// 			textMessage: 'some text'
+	// 		})
+	// 	})
+	// 		.then(res => console.log(res))
+	// }, [])
+
 	return (
 		<section className={classes.contact}>
 			<div className="container">
@@ -11,12 +28,12 @@ function Contactus(props) {
 					<div className={classes.mainContacts}>
 						<div className={classes.telegramContact}>
 							<img className={classes.telegramContact__img} src={logosInstagram} alt="" />
-							<h1 className={classes.telegramContact__title}>Go To Telegram</h1>
+							<a href="https://t.me/" className={classes.telegramContact__title}>Go To Telegram</a>
 						</div>
 
 						<div className={classes.whatsappContact}>
 							<img className={classes.telegramContac__imgt} src={logosWhatsapp} alt="" />
-							<h1 className={classes.telegramContact__title}>Go To Whatsapp</h1>
+							<a href="https://wa.me" className={classes.telegramContact__title}>Go To Whatsapp</a>
 						</div>
 					</div>
 

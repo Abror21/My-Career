@@ -1,4 +1,4 @@
-.talantsDesc {
+.talentsDesc {
 	width: 100%;
 	min-width: 750px;
 
@@ -9,9 +9,9 @@
 		color: #323232;
 	}
 
-	.talantsCard {
-		.talantsSearch {
-			.talantsSearchForm {
+	.talentsCard {
+		.talentsSearch {
+			.talentsSearchForm {
 				max-width: 100%;
 				border-radius: 12px;
 				min-height: 54px;
@@ -40,7 +40,7 @@
 			}
 		}
 
-		.talantsDescCard {
+		.talentsDescCard {
 			padding: 0 3px;
 			margin-top: 20px;
 			height: 522px;
@@ -55,7 +55,7 @@
 			}
 		}
 
-		.talantsDescItem {
+		.talentsDescItem {
 			width: 100%;
 			height: auto;
 			background: #ffffff;
@@ -63,13 +63,13 @@
 			border-radius: 12px;
 			padding: 10px 20px 20px 20px;
 
-			.talantsLine {
+			.talentsLine {
 				min-height: 54px;
 				opacity: 0.5;
 				border-left: 1px solid #cdcdcd;
 			}
 
-			.talantsDescItemHeader {
+			.talentsDescItemHeader {
 				width: 100%;
 				height: 94px;
 				display: flex;
@@ -346,12 +346,12 @@
 }
 
 @media only screen and (max-width: 1356px) {
-	.talantsDesc {
+	.talentsDesc {
 		min-width: 700px;
 
-		.talantsCard {
-			.talantsSearch {
-				.talantsSearchForm {
+		.talentsCard {
+			.talentsSearch {
+				.talentsSearchForm {
 					min-height: 40px;
 
 					button {
@@ -366,20 +366,20 @@
 				}
 			}
 
-			.talantsDescCard {
+			.talentsDescCard {
 				margin-top: 12px;
 				height: 368px !important;
 			}
 
 
-			.talantsDescItem {
+			.talentsDescItem {
 				padding: 5px 10px 10px 10px;
 
-				.talantsLine {
+				.talentsLine {
 					min-height: 42px;
 				}
 
-				.talantsDescItemHeader {
+				.talentsDescItemHeader {
 					height: 54px;
 
 					.jobSuccess>p,
@@ -483,9 +483,9 @@
 }
 
 @media only screen and (max-width: 1756px) {
-	.talantsDesc {
-		.talantsCard {
-			.talantsDescCard {
+	.talentsDesc {
+		.talentsCard {
+			.talentsDescCard {
 				height: 454px !important;
 			}
 		}
@@ -493,9 +493,9 @@
 }
 
 @media only screen and (max-width: 1456px) {
-	.talantsDesc {
-		.talantsCard {
-			.talantsDescCard {
+	.talentsDesc {
+		.talentsCard {
+			.talentsDescCard {
 				height: 368px !important;
 			}
 		}
