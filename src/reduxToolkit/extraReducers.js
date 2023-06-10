@@ -32,7 +32,7 @@ import {
 	ADD_COMPANY,
 	ADD_LOCATION_COMPANY,
 	ADD_CONTACTS_COMPANY
-} from "./URLS";
+} from "../api/URLS";
 
 /////////////////////////////////////REGISTER POST///////////////////////
 export const registerRequest = createAsyncThunk("token/register", async payload => {

@@ -50,7 +50,7 @@ const Login = () => {
 								<form className="login_form" onSubmit={handleSubmit}>
 									<h3 className="login_form_title">Log in</h3>
 									<p className="login_form_info">
-										Still don't have an account? <Link to={`/${lang}/sign-up`}>Sign up</Link> now!
+										Still don't have an account? <Link to={`/${lang}/sign-upz`}>Sign up</Link> now!
 									</p>
 									<input
 										ref={email}

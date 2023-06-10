@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import get from "lodash/get";
 import Dropzone from "react-dropzone";
-import systemActions from "store/actions/system";
+import systemActions from "../../store/actions/system";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { Spinner } from "components";
+import { Spinner } from "../../components";
 
-import mountain from "assets/images/icons/mountain-icon.svg";
-import deleteSvg from "assets/images/icons/delete.svg";
+import mountain from "../../assets/images/icons/mountain-icon.svg";
+import deleteSvg from "../../assets/images/icons/delete.svg";
 
 const UploadFile = ({
 	className,

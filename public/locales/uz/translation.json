@@ -1,4 +1,4 @@
-const translation = {
+{
     "jobs" : "Ish",
     "talants": "Iste'dodlar",
     "contact" : "Bog'lanish",
@@ -27,15 +27,6 @@ const translation = {
     "select_items":"Elementlarni tanlang",
 
 
-
-
-
-
-
-
-
-
-
     "job_success": "Ishda muvaffaqiyat",
     "hourly": "Soatlik",
     "portfolio": "Portfolio",
@@ -56,18 +47,4 @@ const translation = {
     "contacts":"Kontaktlar",
     "living_address":"Yashash manzili",
     "member_since":"A'zo bo'lgan vaqti"
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-export default translation

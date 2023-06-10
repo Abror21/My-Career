@@ -1,5 +1,12 @@
-export const BASE_URL = "http://185.217.131.133:7152";
+// export const BASE_URL = "http://185.217.131.133:7152";
+export const BASE_URL = "https://localhost:7234";
+
+export const CONTACT_US = `${BASE_URL}/api/contacts-us`;
+export const JOBS = `${BASE_URL}/api/job`;
+
+
 export const LOG_IN = `${BASE_URL}/api/auth/login`;
+export const SKILLS = `${BASE_URL}/api/skills`;
 export const REGISTER = `${BASE_URL}/api/auth/register`;
 export const PHOTO = `${BASE_URL}/api/freelancer`;
 export const GET_FREELANCER = `${BASE_URL}/api/Freelancer/Freenalcer/Get`;
@@ -27,14 +34,10 @@ export const ADD_COMPANY = `${BASE_URL}/api/Company/Create`;
 export const ADD_LOCATION_COMPANY = `${BASE_URL}/api/Company/Location/Create`;
 export const ADD_CONTACTS_COMPANY = `${BASE_URL}/api/Company/Contact/Create`;
 export const REGISTER_COMPANY = `${BASE_URL}/api/company`;
-export const JOBS = `${BASE_URL}/api/Job`;
 export const PROJECT = `${BASE_URL}/api/Project`;
 export const EDUCATIONDELETE = `${BASE_URL}/api/education/`;
-// export const USERROLES = `${BASE_URL}/UserRoles`;
-// export const ADDTOFREELANCER = `${BASE_URL}/addtofreelancer`;
-// export const ADDTOCOMPANY = `${BASE_URL}/addtocompany`;
+export const USERROLES = `${BASE_URL}/UserRoles`;
+export const ADDTOFREELANCER = `${BASE_URL}/addtofreelancer`;
+export const ADDTOCOMPANY = `${BASE_URL}/addtocompany`;
 export const FREELANCER = `${BASE_URL}/api/freelancer`;
-// export const CLAIMS = `${BASE_URL}/CLAIMS`;
-// export const CLAIMS = `${BASE_URL}/CLAIMS`;
-export const SKILLS = `${BASE_URL}/api/skill?position=`;
-// export const SKILLS = "http://185.217.131.133:7152/api/skill?position=";
+export const CLAIMS = `${BASE_URL}/CLAIMS`;

@@ -1,8 +1,6 @@
-import {
-    createSlice
-} from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 import { addUser, companyLocation, yourCompany } from "./companyRegisterActions"
-import { registerCompany } from "reduxToolkit/extraReducers"
+import { registerCompany } from "../extraReducers"
 // import { addCompanyContacts, addCompanyInformation, addCompanyLocation, createCompanyUserPost } from "reduxToolkit/extraReducers"
 
 

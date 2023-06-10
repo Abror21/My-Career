@@ -1,5 +1,7 @@
-const { createSlice } = require("@reduxjs/toolkit");
-const { getAllJobs } = require("reduxToolkit/extraReducers");
+// const { createSlice } = require("@reduxjs/toolkit");
+// const { getAllJobs } = require("reduxToolkit/extraReducers");
+import { createSlice } from '@reduxjs/toolkit'
+import { getAllJobs } from '../extraReducers'
 
 const initialState = {
   loading: false,

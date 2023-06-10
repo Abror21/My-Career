@@ -2,5 +2,10 @@
 	"compilerOptions": {
 		"baseUrl": "src"
 	},
-	"include": ["src"]
+	"include": [
+		"src",
+		"public/locales/en",
+		"public/locales/ru",
+		"public/locales/uz"
+	]
 }

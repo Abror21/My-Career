@@ -4,8 +4,8 @@ import './Dropdown.scss'
 import arrow_down from '../../../../assets/images/header/down_arrow.svg'
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector,useDispatch } from 'react-redux';
-import { profilLogout } from 'reduxToolkit/loginSlice/LoginSlice';
-import { getFreelancer } from 'reduxToolkit/extraReducers';
+import { profilLogout } from '../../../../reduxToolkit/loginSlice/LoginSlice';
+import { getFreelancer } from '../../../../reduxToolkit/extraReducers';
 import { UserCircle } from 'tabler-icons-react';
 import { useTranslation } from "react-i18next";
 

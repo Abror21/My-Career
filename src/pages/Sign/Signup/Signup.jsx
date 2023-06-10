@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Signup.scss";
 import sign_logo from "../../../assets/images/Sign/sign_logo.svg";
 // import login_circle from '../../../assets/images/Sign/login_circle.png'
@@ -17,12 +17,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 const Signup = () => {
 
-	// useEffect(() => {
-	// 	fetch('http://185.217.131.133:7152/api/auth/register')
-	// 		.then(res => console.log(res))
-	// }, [])
-
-	const { t } = useTranslation()
+	const { t } = useTranslation();
 
 	const [passwordEye, setPasswordEye] = useState('password')
 	const [passwordEye1, setPasswordEye1] = useState('password')

@@ -1,5 +1,7 @@
-const { createSlice } = require("@reduxjs/toolkit");
-const { projectPost } = require("reduxToolkit/extraReducers");
+// const { createSlice } = require("@reduxjs/toolkit");
+// const { projectPost } = require("reduxToolkit/extraReducers");
+import { createSlice } from '@reduxjs/toolkit'
+import { projectPost } from '../extraReducers'
 
 const initialState = {
   loading: false,

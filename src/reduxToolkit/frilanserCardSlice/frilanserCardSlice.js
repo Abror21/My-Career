@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getFreelancer } from "reduxToolkit/extraReducers";
+import { getFreelancer } from "../extraReducers";
 const initialState = {
 	loading: "",
 	freelancerData: [],

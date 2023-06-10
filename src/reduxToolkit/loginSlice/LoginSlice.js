@@ -1,4 +1,4 @@
-import { addToCompany, addToFreelancer, logInRequest, registerRequest, resumeFinishPost, userRoles } from "reduxToolkit/extraReducers";
+import { addToCompany, addToFreelancer, logInRequest, registerRequest, resumeFinishPost, userRoles } from "../extraReducers";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
 	loading: false,

@@ -1,5 +1,6 @@
-import { useDispatch, useSelector } from "react-redux";
-import { Route, Routes, Navigate, useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import Header from "components/Layout/Header/Header";
 import { createCompany, freelancerResume, freelancerRouter } from "routes";
 import jwt_decode from "jwt-decode";
@@ -15,11 +16,11 @@ import HomeContentSwitcher from "pages/NonAuth/HomeContentSwitcher";
 function App() {
 	const auth = useSelector(state => state.login.loggedIn);
 	const lang = useSelector(state => state.language.language);
-	const freelancerOrCompony = useSelector(state => state.login.freelancerOrCompony);
-	const loginOnSuccess = useSelector(state => state.login.loginOnSuccess);
-	const contactsIsSuccess = useSelector(state => state.companyRegister.contactsIsSuccess);
-	const dispatch = useDispatch();
-	// const navigate = useNavigate();
+	// const [activeLanguage, setActiveLanguage] = useState("en");
+	// const freelancerOrCompony = useSelector(state => state.login.freelancerOrCompony);
+	// const loginOnSuccess = useSelector(state => state.login.loginOnSuccess);
+	// const contactsIsSuccess = useSelector(state => state.companyRegister.contactsIsSuccess);
+
 	const { pathname } = useLocation();
 	const freelancer = localStorage.getItem("isResume") ? localStorage.getItem("isResume") : "welcome";
 
@@ -32,18 +33,28 @@ function App() {
 			: (freelanceOrCompany = Object.values(decode).includes("Freelancer") ? "Freelancer" : "None");
 	}
 
-	// useLayoutEffect(() => {
-	// 	navigate(`/${lang}/`)
-	// }, [lang, navigate])
-
-	// useEffect(() => {
-	// 	if (loginOnSuccess || contactsIsSuccess) {
-	// 		dispatch(userRoles())
-	// 	}
-	// }, [loginOnSuccess, contactsIsSuccess, dispatch])
-
+	const { t, i18n } = useTranslation();
+	const handleLanguage = (lg) => {
+		console.log(i18n);
+		// i18n.changeLanguage(lg);
+		// i18n.changeLanguage('en')
+		// setActiveLanguage(lg);
+	};
 	return (
 		<div className="App">
+			<h1>{t('jobs')}</h1>
+			<div>
+				{
+					["uz", "en", "ru"].map((lg, index) => (
+						<button
+							key={lg + index}
+							onClick={() => handleLanguage(lg)}
+						>
+							{lg}
+						</button>
+					))
+				}
+			</div>
 			{
 				auth === false &&
 				<Routes>

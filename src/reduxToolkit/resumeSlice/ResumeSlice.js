@@ -23,7 +23,7 @@ import {
 	getPositionsSkillsWithId,
 	postFreelancerInfo,
 	Freelancerpost
-} from "reduxToolkit/extraReducers";
+} from "../extraReducers";
 
 const initialState = {
 	loading: false,

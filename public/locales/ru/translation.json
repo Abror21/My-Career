@@ -1,4 +1,4 @@
-const translation = {
+{
     "jobs" : "Работа",
     "talants": "Таланты",
     "contact" : "Kонтакт",
@@ -26,15 +26,6 @@ const translation = {
     "select_region":"Выберите регион",
     "select_items":"Выберите элементы",
 
-
-
-
-
-
-
-
-
-
     "job_success": "Успех в работе",
     "hourly": "Ежечасно",
     "portfolio": "Портфолио",
@@ -55,23 +46,4 @@ const translation = {
     "contacts":"Контакты",
     "living_address":"Живой адрес",
     "member_since":"Участник с"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-export default translation

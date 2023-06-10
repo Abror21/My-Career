@@ -1,6 +1,6 @@
-import { contractCreate, dagavorItem } from "reduxToolkit/extraReducers";
+import { contractCreate, dagavorItem } from "../extraReducers";
 
-const { createSlice } = require("@reduxjs/toolkit")
+import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
     loading: false,

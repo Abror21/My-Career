@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./MyCareer.module.scss";
 import career from "../../assets/images/career.png";
 import searchIcon from "../../assets/images/searchIcon.png";
 import googlePlay from "../../assets/images/googlePlay.png";
 import apple from "../../assets/images/apple.png";
+import { JOBS } from "../../api/URLS";
 
 function MyCareer() {
+
+	useEffect(() => {
+		// fetch(JOBS, {
+			// method: "POST",
+			// headers: {
+			// 	"content-type": "application-json"
+			// }
+		// })
+		// 	.then(res => res.json())
+		// 	.then(data => console.log(data))
+		// 	.catch(err => console.error('Errooor ', err.message))
+		// 	.finally(() => console.log('Experiment completed'))
+	}, [])
+
 	return (
 		<div className={classes.careerBox}>
 			<div className="container">

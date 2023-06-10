@@ -1,25 +1,84 @@
-import React, { useEffect } from "react";
 import classes from "./Contactus.module.scss";
 import logosInstagram from "../../assets/images/icons/logos_telegram.png";
 import logosWhatsapp from "../../assets/images/icons/logos_whatsapp.png";
+import Input from "../../components/Input";
+import { useInput } from "../../hooks/use-input/useInput";
+import Textarea from "../../components/Textarea";
+import { CONTACT_US } from "../../api/URLS";
 
-function Contactus(props) {
+function Contactus() {
 
-	// useEffect(() => {
-	// 	fetch('http://185.217.131.133:7152/api/contacts-us', {
-	// 		method: 'POST',
-	// 		headers: {
-	// 			"content-type": "application/json"
-	// 		},
-	// 		body: JSON.stringify({
-	// 			name: "Ali",
-	// 			email: 'Ali@test.com',
-	// 			phone: '+998971234567',
-	// 			textMessage: 'some text'
-	// 		})
-	// 	})
-	// 		.then(res => console.log(res))
-	// }, [])
+	const {
+		inputChange: nameInputChange,
+		inputBlur: nameInputBlur,
+		inputTouch: nameInputTouch,
+		inputReset: nameInputReset,
+		value: name,
+		inputIsValid: nameIsValid,
+		inputIsError: nameInputIsError
+	} = useInput(name => name.trim().length !== 0)
+	const {
+		inputChange: emailInputChange,
+		inputBlur: emailInputBlur,
+		inputTouch: emailInputTouch,
+		inputReset: emailInputReset,
+		value: email,
+		inputIsValid: emailIsValid,
+		inputIsError: emailInputIsError
+	} = useInput(email => email.includes('@'))
+	const {
+		inputChange: phoneInputChange,
+		inputBlur: phoneInputBlur,
+		inputTouch: phoneInputTouch,
+		inputReset: phoneInputReset,
+		value: phone,
+		inputIsValid: phoneIsValid,
+		inputIsError: phoneInputIsError
+	} = useInput(phone => phone.length === 19)
+	const {
+		inputChange: textInputChange,
+		inputBlur: textInputBlur,
+		inputTouch: textInputTouch,
+		inputReset: textInputReset,
+		value: text,
+		inputIsValid: textIsValid,
+		inputIsError: textInputIsError
+	} = useInput(text => text.trim().length > 10)
+
+	const handleSubmit = e => {
+		e.preventDefault();
+		nameInputTouch();
+		emailInputTouch();
+		phoneInputTouch();
+		textInputTouch();
+
+		if (nameIsValid && emailIsValid && phoneIsValid && textIsValid) {
+			fetch(CONTACT_US, {
+				method: 'POST',
+				headers: {
+					"content-type": "application/json"
+				},
+				body: JSON.stringify({
+					name,
+					email,
+					phone,
+					textMessage: text
+				})
+			})
+				.then(res => {
+					if (res.ok) {
+						nameInputReset();
+						emailInputReset();
+						phoneInputReset();
+						textInputReset();
+						alert('Data sent successfully')
+					} else {
+						throw Error('Something went wrong')
+					}
+				})
+				.catch(err => alert(err.message))
+		}
+	}
 
 	return (
 		<section className={classes.contact}>
@@ -37,14 +96,47 @@ function Contactus(props) {
 						</div>
 					</div>
 
-					<form className={classes.contactUs}>
+					<form className={classes.contactUs} onSubmit={handleSubmit}>
 						<h1 className={classes.contactUs__title}>Contact us</h1>
 						<p className={classes.contactUs__desc}>Fill in the blank and we will contact you</p>
-						<input type="text" placeholder="Name" required />
-						<input type="email" placeholder="E-mail" required />
-						<input type="number" placeholder="+998 99 999 99 99" min="1" max="13" required />
-						<textarea className={classes.textMessage} type="text" placeholder="Text message" required></textarea>
-						<button type="submit">Send</button>
+						<div className={classes.contactUs__content}>
+							<Input
+								type="text"
+								placeholder="Name"
+								inputIsError={nameInputIsError}
+								value={name}
+								inputChange={nameInputChange}
+								inputBlur={nameInputBlur}
+								errorMessage="Please enter valid name"
+							/>
+							<Input
+								type="email"
+								placeholder="Email"
+								inputIsError={emailInputIsError}
+								value={email}
+								inputChange={emailInputChange}
+								inputBlur={emailInputBlur}
+								errorMessage="Please enter valid email"
+							/>
+							<Input
+								mask="+\9\9\8 (99) 999-99-99"
+								placeholder="Phone"
+								inputIsError={phoneInputIsError}
+								value={phone}
+								inputChange={phoneInputChange}
+								inputBlur={phoneInputBlur}
+								errorMessage="Please enter phone number"
+							/>
+							<Textarea
+								placeholder="Text message"
+								inputIsError={textInputIsError}
+								value={text}
+								inputChange={textInputChange}
+								inputBlur={textInputBlur}
+								errorMessage="Text length should be at least 10 characters"
+							/>
+							<button type="submit">Send</button>
+						</div>
 					</form>
 				</div>
 			</div>

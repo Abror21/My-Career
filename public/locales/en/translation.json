@@ -1,5 +1,5 @@
 
-const translation = {
+{
     "jobs" : "Jobs",
     "talants": "Talants",
     "contact" : "Contact us",
@@ -48,9 +48,4 @@ const translation = {
     "contacts":"Contacts",
     "living_address":"Living address",
     "member_since":"Member since"
-
-
-
 }
-
-export default translation
