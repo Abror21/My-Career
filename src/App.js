@@ -42,7 +42,7 @@ function App() {
 	};
 	return (
 		<div className="App">
-			<h1>{t('jobs')}</h1>
+			{/* <h1>{t('jobs')}</h1>
 			<div>
 				{
 					["uz", "en", "ru"].map((lg, index) => (
@@ -54,7 +54,7 @@ function App() {
 						</button>
 					))
 				}
-			</div>
+			</div> */}
 			{
 				auth === false &&
 				<Routes>
